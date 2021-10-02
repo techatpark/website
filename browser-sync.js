@@ -10,7 +10,7 @@
  |  https://github.com/shakyShane/browser-sync/wiki/Working-with-a-Config-File
  |
  */
-module.exports = {
+ module.exports = {
 
     /*
      |--------------------------------------------------------------------------

@@ -1,23 +1,27 @@
-![GitHub Actions status | techatpark/website](https://github.com/techatpark/website/workflows/Node%20CI/badge.svg)
+# Reference Implementation of Static Site using NPM Scripts
+Reference implementation for HTML Prototypes using NPM Scripts. This codebase is maintained by students and volunteers of [techatpark](http://www.techatpark.com)
 
+### Design Goals
 
-This projects contains Website of techatpark
+We have below design goals.
 
+1. Use Low level tools as much as possible
+1. Stablilty over cutting edge
+1. Best Practices and Conventions
+1. Build time Speed 
 
-### Usage
+We carefuly avoided using image optimization during build time as it is good to do images at design time rather than build time.
 
-Ask NVM to use the appropriate node version
+### Setup
+
+To set the appropriate node version. You can install nvm from [here](https://github.com/nvm-sh/nvm)
 
 > nvm install
 
-To download the dependencies, we to to install node modules using
+To download the dependencies and build
 
-> npm install
-
-To build the application
-
-> npm run build
+> npm i
 
 To watch the application on your local browser
 
-> npm run watch
+> npm start

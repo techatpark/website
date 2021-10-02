@@ -1,0 +1,11 @@
+baseurl = "/"
+languageCode = "en-us"
+languageLang = "en"
+title = "TECHATPARK - BUILDING PRO-GRAMMERS !"
+
+# uncomment the next line to disable listing authors
+# disableKinds = ["taxonomyTerm"]
+
+[taxonomies]
+  author = "authors"
+  tag = "tags"

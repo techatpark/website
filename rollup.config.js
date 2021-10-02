@@ -1,7 +1,7 @@
-export default {
-    input: './src/js/index.js', // entry point
-    output: {
-        file: './dist/js/bundle.min.js', // output bundle file
-        format: 'cjs'
-    }
-}
+export default [{
+  input: 'src/js/core/index.js',
+  output: {
+    file: 'dist/js/core.js',
+    format: 'cjs'
+  }
+}]
