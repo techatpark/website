@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors on TECHATPARK - BUILDING PRO-GRAMMERS !</title>
+    <link>/authors/</link>
+    <description>Recent content in Authors on TECHATPARK - BUILDING PRO-GRAMMERS !</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>/authors/cupcake-lover/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/cupcake-lover/</guid>
+      <description>Author 1 loves cupcakes. Liquorice jelly beans jelly beans. Tootsie roll cotton candy jelly beans. Lollipop tiramisu macaroon macaroon apple pie sesame snaps carrot cake marzipan liquorice. Liquorice topping lemon drops pudding.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/authors/the-cookie-monster/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/the-cookie-monster/</guid>
+      <description>Author 2 loves cookies. Topping chocolate croissant. Chocolate bar wafer pudding brownie cake jelly-o soufflé sesame snaps. Tootsie roll pie sweet roll jelly beans gummies.</description>
+    </item>
+    
+  </channel>
+</rss>
