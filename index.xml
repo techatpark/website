@@ -41,15 +41,6 @@
     </item>
     
     <item>
-      <title>Post No. 1</title>
-      <link>/posts/post-1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/post-1/</guid>
-      <description>Caramels tootsie roll I love macaroon jujubes. I love icing bonbon. Topping ice cream muffin marzipan lemon drops sugar plum biscuit. Chocolate cupcake powder macaroon bear claw I love cupcake icing. Jelly bear claw caramels jelly beans jelly-o soufflé. Powder cheesecake pastry lemon drops oat cake bonbon gummi bears. Jelly-o I love cake cupcake. I love halvah gummi bears caramels. Gummies I love gummies fruitcake cake marzipan. Oat cake donut cake brownie.</description>
-    </item>
-    
-    <item>
       <title>Post No. 2</title>
       <link>/posts/post-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -66,6 +57,15 @@ Cheesecake cookie cake chocolate bar cupcake ice cream chocolate cake.</descript
       
       <guid>/posts/post-3/</guid>
       <description>Bonbon macaroon candy canes tart halvah sweet cotton candy pastry. Gummies oat cake marzipan I love icing cookie cookie cotton candy. Halvah fruitcake pastry I love gummies. Gummi bears danish fruitcake soufflé candy canes cheesecake I love. Cupcake I love tiramisu marzipan powder tootsie roll cookie chocolate cake cake. Cotton candy jelly-o liquorice. Jelly-o chupa chups jelly beans jelly beans. Brownie cookie I love cotton candy gingerbread cupcake jelly liquorice I love.</description>
+    </item>
+    
+    <item>
+      <title>Why Opensource is a serious business (today) ?</title>
+      <link>/posts/post-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/post-1/</guid>
+      <description>Hellow</description>
     </item>
     
   </channel>

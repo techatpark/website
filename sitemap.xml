@@ -2,7 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/authors/cupcake-lover/</loc>
+    <loc>/authors/rmhari/</loc>
+  </url><url>
+    <loc>/authors/sathishk/</loc>
   </url><url>
     <loc>/authors/the-cookie-monster/</loc>
   </url><url>
@@ -19,13 +21,15 @@
   </url><url>
     <loc>/tags/cupcake/</loc>
   </url><url>
+    <loc>/authors/cupcake-lover/</loc>
+  </url><url>
+    <loc>/tags/kjskj/</loc>
+  </url><url>
     <loc>/our-achievements/</loc>
   </url><url>
     <loc>/our-method/</loc>
   </url><url>
     <loc>/our-values/</loc>
-  </url><url>
-    <loc>/posts/post-1/</loc>
   </url><url>
     <loc>/posts/post-2/</loc>
   </url><url>
@@ -34,5 +38,7 @@
     <loc>/tags/</loc>
   </url><url>
     <loc>/</loc>
+  </url><url>
+    <loc>/posts/post-1/</loc>
   </url>
 </urlset>

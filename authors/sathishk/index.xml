@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TECHATPARK - BUILDING PRO-GRAMMERS !</title>
+    <link>/authors/sathishk/</link>
+    <description>Recent content on TECHATPARK - BUILDING PRO-GRAMMERS !</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/authors/sathishk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why Opensource is a serious business (today) ?</title>
+      <link>/posts/post-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/post-1/</guid>
+      <description>Hellow</description>
+    </item>
+    
+  </channel>
+</rss>
