@@ -16,7 +16,9 @@
 
 <body>
   
+  {{ if not .IsHome }}
   {{ block "header" . }}{{ partial "header" . }}{{end}}
+  {{ end }}
  
 
   <main class="container-fluid">
