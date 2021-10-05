@@ -6,6 +6,8 @@ authors:
 tags:
   - cookie
   - cupcake
+authorimage: 'http://localhost:3000/images/mani.jpg'
+---
 ---
 Bonbon macaroon candy canes tart halvah sweet cotton candy pastry. Gummies oat cake marzipan I love icing cookie cookie cotton candy. Halvah fruitcake pastry I love gummies. Gummi bears danish fruitcake soufflé candy canes cheesecake I love. Cupcake I love tiramisu marzipan powder tootsie roll cookie chocolate cake cake. Cotton candy jelly-o liquorice. Jelly-o chupa chups jelly beans jelly beans. Brownie cookie I love cotton candy gingerbread cupcake jelly liquorice I love.
 
