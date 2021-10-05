@@ -4,6 +4,7 @@
   <header>
     <h1>{{ .Title }}</h1>
     <p>by {{ .Render "author-link" }}
+    <img src="{{ .Params.authorimage}}" alt="" />
   </header>
   {{ .Content }}
 </article>
