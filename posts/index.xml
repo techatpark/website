@@ -7,6 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Why Opensource is a serious business (today) ?</title>
+      <link>/posts/opensource-means-business/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/opensource-means-business/</guid>
+      <description>Opensource is everywhere today. Be it is mobiles we use or cloud, Opensource is behind most of the things we enjoy today. What is it really ?
+Opensource means technology that are done some of the great people who does not think about money makes cheap business solutions.
+Fair ?! Might be few decades ago. An Idea which is considered stuppid by many slowly and studiely proved its worth. Every enterprice loves opensource.</description>
+    </item>
+    
+    <item>
       <title>Post No. 2</title>
       <link>/posts/post-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -23,17 +34,6 @@ Cheesecake cookie cake chocolate bar cupcake ice cream chocolate cake.</descript
       
       <guid>/posts/post-3/</guid>
       <description>Bonbon macaroon candy canes tart halvah sweet cotton candy pastry. Gummies oat cake marzipan I love icing cookie cookie cotton candy. Halvah fruitcake pastry I love gummies. Gummi bears danish fruitcake soufflé candy canes cheesecake I love. Cupcake I love tiramisu marzipan powder tootsie roll cookie chocolate cake cake. Cotton candy jelly-o liquorice. Jelly-o chupa chups jelly beans jelly beans. Brownie cookie I love cotton candy gingerbread cupcake jelly liquorice I love.</description>
-    </item>
-    
-    <item>
-      <title>Why Opensource is a serious business (today) ?</title>
-      <link>/posts/post-1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/post-1/</guid>
-      <description>Opensource provides technical solutions that are done some of the great people who does not think about money makes cheap business solutions.
-Our Indurtry is not as same as it was before a decade. But our process and techniques remains same unfortunately. Before we proceed further lets understand the fundamental diffrence
-We have moved away from Software Development to developing softwares We worked around product but now we work on the product.</description>
     </item>
     
   </channel>
