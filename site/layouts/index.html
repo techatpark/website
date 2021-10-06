@@ -22,18 +22,18 @@
 
   <div class="container">
     <div class="row">
-      <div class="col">
+      <div class="col-6">
         <div class="brand p-2">
-          <img src="/images/logo_full.svg" alt="brandimg" width="80px" height="80px">
+          <img src="/images/logo_full.svg" alt="brandimg" width="150px" height="150px">
           <h3>BUILDING PRO-GRAMMERS !</h3>
-          <p class="lh-2 text-nowrap text-truncate">We help deserving candidates to find their first software job by
+          <p class="text-nowrap">We help deserving candidates to find their first software job by
             providing
-            free training. <br> Our goal is to make sure the right opportunity meets the right
+            free training. <br>Our goal is to make sure the right opportunity meets the right
             talent!</p>
           <a class="button btn-success btn-lg mb-5 mb-lg-2 text-decoration-none" href="/our-method">Learn More</a>
         </div>
       </div>
-      <div id="carouselExampleSlidesOnly" class="col carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleSlidesOnly" class="col-6 carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           {{ range $elem_index, $testimonial := .Site.Data.testimonials}}
           <div class="carousel-item{{ if eq $elem_index "martyn" }} active{{ end }}">

@@ -30,9 +30,9 @@
                 <rect id="Rectangle" fill="#77D236" fill-rule="nonzero" x="19.992" y="6.524" width="2.256" height="2.104"></rect>
             </g>
             <text id="Tech@Park" font-family="Roboto-Black, Roboto" font-size="12" font-weight="700" letter-spacing="0.184615403">
-                <tspan x="0.391886935" y="55" fill="#6B6B6B">Tech</tspan>
+                <tspan x="0.391886935" y="55" fill="#FFFFFF">Tech</tspan>
                 <tspan x="27.7143329" y="55" fill="#77D236">@</tspan>
-                <tspan x="38.6450421" y="55" fill="#6B6B6B">Park</tspan>
+                <tspan x="38.6450421" y="55" fill="#FFFFFF">Park</tspan>
             </text>
         </g>
     </g>
