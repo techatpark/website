@@ -21,14 +21,16 @@
   {{ end }}
  
 
-  <main class="container-fluid">
+  <main class="container-fluid{{ if .IsHome }} mas-head{{end}}">
     <div class="row py-5 w-100 h-100" id="main-container">
       {{ block "main" . }}{{end}}
     </div>
     
   </main>
-  {{ block "footer" . }}{{ partial "footer" . }}{{end}}
 
+  {{ if not .IsHome }}
+  {{ block "footer" . }}{{ partial "footer" . }}{{end}}
+  {{ end }}
 
 
   
