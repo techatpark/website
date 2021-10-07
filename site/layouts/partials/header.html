@@ -11,6 +11,11 @@
     </button>
     <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
+        {{if hasPrefix  .Page.RelPermalink "/courses" }}
+        <li class="nav-item">
+          <h4>{{ .Title }}</h4>
+        </li>
+        {{else}}
         <li class="nav-item">
           <a class="nav-link active" href="/our-method">Our Method</a>
         </li>
@@ -23,6 +28,8 @@
         <li class="nav-item">
           <a class="nav-link" href="/posts">Blog</a>
         </li>
+        {{end}}
+        
       </ul>
     </div>
   </div>
