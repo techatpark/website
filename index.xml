@@ -5,7 +5,8 @@
     <link>/</link>
     <description>Recent content on TECHATPARK - BUILDING PRO-GRAMMERS !</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Wed, 14 Nov 2018 19:02:50 -0700</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Why Opensource is a serious business (today) ?</title>
       <link>/posts/opensource-means-business/</link>
@@ -13,8 +14,17 @@
       
       <guid>/posts/opensource-means-business/</guid>
       <description>Opensource is everywhere today. Be it is mobiles we use or cloud, Opensource is behind most of the things we enjoy today. What is it really ?
-Opensource means technology that are done some of the great people who does not think about money makes cheap business solutions.
+Opensource means technology that are done some of the great people who does not think about money to make cheap business solutions.
 Fair ?! Might be few decades ago. An Idea which is considered stuppid by many slowly and studiely proved its worth. Every enterprice loves opensource.</description>
+    </item>
+    
+    <item>
+      <title>Sets</title>
+      <link>/courses/opensource-means-business/</link>
+      <pubDate>Wed, 14 Nov 2018 19:02:50 -0700</pubDate>
+      
+      <guid>/courses/opensource-means-business/</guid>
+      <description>  Open Source is a stupid idea    Definition  “Opensource means technology that are done some of the great people who does not think about money to make cheap business solutions.”  </description>
     </item>
     
     <item>

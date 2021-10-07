@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Courses on TECHATPARK - BUILDING PRO-GRAMMERS !</title>
+    <link>/courses/</link>
+    <description>Recent content in Courses on TECHATPARK - BUILDING PRO-GRAMMERS !</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 14 Nov 2018 19:02:50 -0700</lastBuildDate><atom:link href="/courses/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sets</title>
+      <link>/courses/opensource-means-business/</link>
+      <pubDate>Wed, 14 Nov 2018 19:02:50 -0700</pubDate>
+      
+      <guid>/courses/opensource-means-business/</guid>
+      <description>  Open Source is a stupid idea    Definition  “Opensource means technology that are done some of the great people who does not think about money to make cheap business solutions.”  </description>
+    </item>
+    
+  </channel>
+</rss>
