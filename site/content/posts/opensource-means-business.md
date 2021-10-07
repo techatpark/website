@@ -11,7 +11,7 @@ authorimage: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOd256TcC6vc
 
 Opensource is everywhere today. Be it is mobiles we use or cloud, Opensource is behind most of the things we enjoy today. What is it really ? 
 
-Opensource means technology that are done some of the great people who does not think about money makes cheap business solutions.
+Opensource means technology that are done some of the great people who does not think about money to make cheap business solutions.
 
 Fair ?! Might be few decades ago. An Idea which is considered stuppid by many slowly and studiely proved its worth. Every enterprice loves opensource. Before we understand why. Let us understand what change we as industry have gone through over the last decade
 
@@ -19,9 +19,6 @@ From Software Development to developing softwares
 From working around product but now we work on the product.
 Size is not a strength. Smaller is better
 Design for destruction
-
-Opensource software is not new but the way we look at it has drastically changed. . Why business sess open source as a successful model is for two reason.
-
 
 Journey Of Buildingg Great Product 
 
@@ -45,16 +42,14 @@ Right Process
 
 Lets take each step one by one. 
 
-Secret Ideas are just secret ideas
+
 
 Industry Connect. Multi Dimention.
 
-
-Adobe Flex - Huge Boost.
-
-
 DS Algo;
  All Previous Projects - DS Alogo is something that i need to prepare for interviews. I can download from Geeks for Geeks.
+
+Adobe Flex - Huge Boost.
 
 Words Matter
 Linus Admin - Clould Engineer
@@ -78,17 +73,29 @@ Open source
 
 Resourceful ness ( CI / CD )
 Can not feel it but effective
-Business Purpose 
-Completeness (End to End Idea)
+Overwork No Requirement 
+Design System
+Upgarde to Java 11
 
+
+
+Opensource:
+Simplicity is survival
+Candiate Approches Oppetunity
+Decitions are made by developers
+Remote By Nature
+
+Secret Ideas are just secret ideas
+
+Opensource means business that are done sum of the great people who does (not) think about money makes affordable business solutions.
 
 Open SOurce should be part of college syllobous. Final Year projects to be developed as open sources
 Bench Strencth to be put on targetted open source projects
 Meetups and Openosurce contributions as trusted CV.
 Opensource stretegy to be part of planning
 
+Opensource software is not new but the way we look at it has drastically changed. . Why business sess open source as a successful model is for two reason.
 
 Share knowlege will double it
 Great things might be invented by some of the great people. For it to run it needs Sum of the great people.
 
-Opensource means business that are done sum of the great people who does (not) think about money makes affordable business solutions.
