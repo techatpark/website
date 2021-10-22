@@ -159,44 +159,42 @@ But if multiple applications are running, system resources could be affected.</p
 <p>This log level logs any logging levels that are defined. It logs everything and includes custom logging levels as well. It is the combination of all other logging levels.</p>
 <p>Logging best practices:</p>
 <ol>
-<li>
-<p>Use a Standard Logging Library
-Things to consider and evaluate are performance, flexibility, appenders for new log centralization solutions, and so on. If you tie yourself directly to a single framework the switch to a newer library can take a substantial amount of work and time. Keep that in mind and go for the API that will give you the flexibility to swap logging libraries in the future. Just like with the switch from Log4j to Logback and to Log4j 2, when using the SLF4J API the only thing you need to do is change the dependency, not the code.</p>
-</li>
-<li>
-<p>Select Your Appenders Wisely</p>
-</li>
+<li>Use a Standard Logging Library</li>
+</ol>
+<p>Things to consider and evaluate are performance, flexibility, appenders for new log centralization solutions, and so on. If you tie yourself directly to a single framework the switch to a newer library can take a substantial amount of work and time. Keep that in mind and go for the API that will give you the flexibility to swap logging libraries in the future. Just like with the switch from Log4j to Logback and to Log4j 2, when using the SLF4J API the only thing you need to do is change the dependency, not the code.</p>
+<ol start="2">
+<li>Select Your Appenders Wisely</li>
 </ol>
 <p>Appenders define where your log events will be delivered. The most common appenders are the Console and File Appenders.</p>
 <ol start="3">
-<li>Use Meaningful Messages
-Your log events should include messages that are unique to the given situation, clearly describe them and inform the person reading them. Imagine a communication error occurred in your application. You might do it like this:</li>
+<li>Use Meaningful Messages</li>
 </ol>
+<p>Your log events should include messages that are unique to the given situation, clearly describe them and inform the person reading them. Imagine a communication error occurred in your application. You might do it like this:</p>
 <p>LOGGER.warn(&ldquo;Communication error&rdquo;);
 But you could also create a message like this:</p>
 <p>LOGGER.warn(&ldquo;Error while sending documents to your server, response code %d, response message %s. The message sending will be retried.&rdquo;, responseCode, responseMessage)</p>
 <ol start="4">
-<li>Logging Java Stack Traces
-public static void main(String[] args) {
+<li>
+<p>Logging Java Stack Traces</p>
+<p>public static void main(String[] args) {
 try {
 throw new IOException(&ldquo;This is an I/O error&rdquo;);
 } catch (IOException ioe) {
 LOGGER.error(&ldquo;Error while executing main thread&rdquo;, ioe);
 }
-}</li>
+}</p>
+</li>
 </ol>
 <p>11:30:17.527 ERROR - Error while executing main thread
 java.io.IOException: This is an I/O error
-at com.logging.Log4JException.main(Log4JException.java:13) [main/:?]</p>
+at com.logging.main(Log4JException.java:13) [main/:?]</p>
 <p>It contains relevant information – i.e. the name of the class, the method where the problem occurred, and finally the line number where the problem happened. Of course, in real-life situations, the stack traces will be longer, but you should include them to give you enough information for proper debugging.</p>
 <ol start="5">
-<li>
-<p>Keep the Log Structure Consistent
-The structure of your log events should be consistent. This is not only true within a single application or set of microservices, but should be applied across your whole application stack. With similarly structured log events it will be easier to look into them, compare them, correlate them, or simply store them in a dedicated data store.</p>
-</li>
-<li>
-<p>Add Context to Your Logs</p>
-</li>
+<li>Keep the Log Structure Consistent</li>
+</ol>
+<p>The structure of your log events should be consistent. This is not only true within a single application or set of microservices, but should be applied across your whole application stack. With similarly structured log events it will be easier to look into them, compare them, correlate them, or simply store them in a dedicated data store.</p>
+<ol start="6">
+<li>Add Context to Your Logs</li>
 </ol>
 <p>Information context is important and for us developers and DevOps a log message is information. Look at the following log entry:</p>
 <p>[2020-06-29 16:25:34] [ERROR ] An error occurred!</p>
