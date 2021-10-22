@@ -44,13 +44,23 @@ Building Blocks of logging :
 		
 			The Logger 
 			The Formatter
+            The Filter
 			The Appender (or Handler)
 
 The Logger is responsible for capturing the message to be logged along with certain metadata and passing it to the logging framework.
 
 After receiving the message, the framework calls the Formatter with the message which formats it for output.
+        eg: SimpleFormatter
+            XMLFormatter
 
-The framework then hands the formatted message to the appropriate Appender/Handler for disposition. This might include output to a console display, writing to disk, appending to a database, or generating an email.
+The Filter can filter out log messages, meaning decide if the message gets logged or not.
+
+The framework then hands the formatted message to the appropriate Appender/Handler for disposition. This might include output to a console display, writing to disk, appending to a database, or generating an email. 
+        eg: ConsoleHandler
+            FileHandler
+            StreamHandler
+            SocketHandler
+            MemoryHandler
 
 
 Logging Levels:
