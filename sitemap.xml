@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/posts/logging-in-java/</loc>
+  </url><url>
     <loc>/posts/opensource-means-business/</loc>
   </url><url>
     <loc>/courses/opensource-means-business/</loc>

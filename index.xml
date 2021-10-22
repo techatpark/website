@@ -8,6 +8,17 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 14 Nov 2018 19:02:50 -0700</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Logging in Java</title>
+      <link>/posts/logging-in-java/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/logging-in-java/</guid>
+      <description>Logging Greatness:
+For many years, logs have been an essential part of troubleshooting application and infrastructure performance. They help provide visibility into how our applications are running on each of the various infrastructure components.
+Log data contains information such as out of memory exception or hard disk errors. This is very helpful information that will help us identify the “why” behind a problem either that a user has brought to our attention or that we have uncovered.</description>
+    </item>
+    
+    <item>
       <title>Why Opensource is a serious business (today) ?</title>
       <link>/posts/opensource-means-business/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
