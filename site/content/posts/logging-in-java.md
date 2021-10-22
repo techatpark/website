@@ -93,6 +93,7 @@ This log level logs any logging levels that are defined. It logs everything and 
 Logging best practices:
 
 1. Use a Standard Logging Library
+
 Things to consider and evaluate are performance, flexibility, appenders for new log centralization solutions, and so on. If you tie yourself directly to a single framework the switch to a newer library can take a substantial amount of work and time. Keep that in mind and go for the API that will give you the flexibility to swap logging libraries in the future. Just like with the switch from Log4j to Logback and to Log4j 2, when using the SLF4J API the only thing you need to do is change the dependency, not the code.
 
 2. Select Your Appenders Wisely
@@ -100,6 +101,7 @@ Things to consider and evaluate are performance, flexibility, appenders for new 
 Appenders define where your log events will be delivered. The most common appenders are the Console and File Appenders.
 
 3. Use Meaningful Messages
+
 Your log events should include messages that are unique to the given situation, clearly describe them and inform the person reading them. Imagine a communication error occurred in your application. You might do it like this:
 
 LOGGER.warn("Communication error");
@@ -108,6 +110,7 @@ But you could also create a message like this:
 LOGGER.warn("Error while sending documents to your server, response code %d, response message %s. The message sending will be retried.", responseCode, responseMessage)
 
 4. Logging Java Stack Traces
+
     public static void main(String[] args) {
         try {
             throw new IOException("This is an I/O error");
@@ -118,11 +121,12 @@ LOGGER.warn("Error while sending documents to your server, response code %d, res
 
 11:30:17.527 ERROR - Error while executing main thread
 java.io.IOException: This is an I/O error
-    at com.logging.Log4JException.main(Log4JException.java:13) [main/:?]
+    at com.logging.main(Log4JException.java:13) [main/:?]
 
 It contains relevant information – i.e. the name of the class, the method where the problem occurred, and finally the line number where the problem happened. Of course, in real-life situations, the stack traces will be longer, but you should include them to give you enough information for proper debugging.
 
 5. Keep the Log Structure Consistent
+
 The structure of your log events should be consistent. This is not only true within a single application or set of microservices, but should be applied across your whole application stack. With similarly structured log events it will be easier to look into them, compare them, correlate them, or simply store them in a dedicated data store.
 
 6. Add Context to Your Logs
