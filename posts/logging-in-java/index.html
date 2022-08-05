@@ -132,10 +132,10 @@ But if multiple applications are running, system resources could be affected.</p
 <p>So we must take care of WHAT WE LOG AND WHERE WE LOG.</p>
 <p>Unfortunately the JDK did not include logging in its original release so by the time the Java Logging API was added several other logging frameworks had become widely used - in particular Apache Commons Logging (also known as Java Commons Logging or JCL) and log4J. This led to problems when integrating different third-party libraries (JARs) each using different logging frameworks. Pluggable logging frameworks (wrappers) were developed to solve this problem.</p>
 <p>Building Blocks of logging :</p>
-<pre><code>        The Logger 
-        The Formatter
+<pre><code>		The Logger 
+		The Formatter
         The Filter
-        The Appender (or Handler)
+		The Appender (or Handler)
 </code></pre>
 <p>The Logger is responsible for capturing the message to be logged along with certain metadata and passing it to the logging framework.</p>
 <p>After receiving the message, the framework calls the Formatter with the message which formats it for output.
