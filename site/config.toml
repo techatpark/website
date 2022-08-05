@@ -9,3 +9,8 @@ title = "TECHATPARK - BUILDING PRO-GRAMMERS !"
 [taxonomies]
   author = "authors"
   tag = "tags"
+
+[security]
+  [security.funcs]
+    getenv = ['^HUGO_','CONTEXT']
+
