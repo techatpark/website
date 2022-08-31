@@ -20,8 +20,6 @@ jobs:
     - name: npm install, build, and test
       run: |
         npm install
-        npm run build --if-present
-        npm test
         echo 'techatpark.com' > dist/CNAME
       env:
         CI: true
