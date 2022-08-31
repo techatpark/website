@@ -1,61 +1,63 @@
 {{ define "main" }}
 
-<div class="container-fluid mas-head text-white">
+<!-- Background Image-->
+<img class="bg-image" src="/images/bg.jpg"/>
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    {{ range $elem_index, $testimonial := .Site.Data.testimonials}}
+    <div class="carousel-item{{ if eq $elem_index "martyn" }} active{{ end }}">
+      <figure class="text-end">
+        <blockquote class="blockquote text-white">
+          <p>{{ $testimonial.text }}</p>
+        </blockquote>
+        <figcaption class="blockquote-footer text-primary">
+          {{ $testimonial.name }} , <cite title="Source Title">{{ $testimonial.company }}</cite>
+        </figcaption>
+      </figure>
+    </div>
+{{end}}
+  </div>
+</div>
+<!-- Masthead-->
+<div class="masthead">
+    <div class="masthead-content text-white">
+        <div class="container-fluid px-1 px-lg-0">
+          <img src="/images/logo_full.svg" alt="brandimg" width="160px" height="160px">
+            <h1 class="fst-italic mb-2">BUILDING PRO-GRAMMERS!</h1>
+            <p class="mb-5">We help deserving candidates to find their first software job by providing free training.
+              Our goal is to make sure the right opportunity meets the right talent!</p>
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <!-- Email address input-->
+                <div class="row">
+                    <div class="col-auto"><a class="btn btn-primary" href="/our-method">Learn More</a></div>
+                    <div class="col-auto"><a class="btn btn-secondary" href="/schoolership">Build With Us</a></div>
+                </div>
 
-  <ul class="nav justify-content-end">
+                
+            </form>
+        </div>
+        
+    </div>
+</div>
+<!-- Social Icons-->
+<!-- For more icon options, visit https://fontawesome.com/icons?d=gallery&p=2&s=brands-->
+<div class="social-icons">
+    <ul class="nav d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
     <li class="nav-item">
-      <a class="nav-link h2" href="https://github.com/techatpark">
-        <i class="fab fa-github"></i>
+      <a class="nav-link" href="https://github.com/techatpark">
+        <i class="fab fa-github fa-2x"></i>
         </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link h2" href="https://www.linkedin.com/company/techatpark/">
-        <i class="fab fa-linkedin"></i>
+      <a class="nav-link" href="https://www.linkedin.com/company/techatpark/">
+        <i class="fab fa-linkedin fa-2x"></i>
         </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link h2" href="/posts">
-        <i class="fas fa-blog"></i>
+      <a class="nav-link" href="/posts">
+        <i class="fas fa-blog fa-2x"></i>
         </a>
     </li>
   </ul>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-6">
-        <div class="brand p-2">
-          <img src="/images/logo_full.svg" alt="brandimg" width="150px" height="150px">
-          <h3>BUILDING PRO-GRAMMERS !</h3>
-          <p class="text-nowrap">We help deserving candidates to find their first software job by
-            providing
-            free training. <br>Our goal is to make sure the right opportunity meets the right
-            talent!</p>
-          <a class="button btn-primary btn-lg mb-5 mb-lg-2 text-decoration-none" href="/our-method">Learn More</a>
-        </div>
-      </div>
-      <div id="carouselExampleSlidesOnly" class="col-6 carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          {{ range $elem_index, $testimonial := .Site.Data.testimonials}}
-          <div class="carousel-item{{ if eq $elem_index "martyn" }} active{{ end }}">
-            <figure class="text-end">
-              <blockquote class="blockquote">
-                <p>{{ $testimonial.text }}</p>
-              </blockquote>
-              <figcaption class="blockquote-footer">
-                {{ $testimonial.name }} , <cite title="Source Title">{{ $testimonial.company }}</cite>
-              </figcaption>
-            </figure>
-          </div>
-{{end}}
-        </div>
-      </div>
-      </div>
-    </div>
-  </div>
-
-
-
-
 </div>
-
 {{ end }}
