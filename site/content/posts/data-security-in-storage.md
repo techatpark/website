@@ -13,7 +13,7 @@ Storage data security refers to the measures and techniques used to protect data
 
 components of storage data security:
 
-1. Encryption
+1. Crypytography
 2. Access control
 3. Backup and disaster recovery
 4. Firewall and intrusion detection
@@ -21,6 +21,12 @@ components of storage data security:
 6. Compliance
 7. Data De-identification
 8. Data Governance
+
+Crypytography is used to protect your sensitive data using one of the below
+
+Pseudonymized
+Anonymized
+Generalized
 
 Overall, storage data security is a critical component of protecting sensitive information, and organizations should implement a comprehensive security strategy that includes all of these components. Regularly monitoring, testing and updating the security measures will help to ensure that data is kept secure.
 
