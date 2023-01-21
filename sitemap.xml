@@ -2,12 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/posts/logging-in-java/</loc>
-  </url><url>
-    <loc>/posts/opensource-means-business/</loc>
+    <loc>/posts/spring-boot-3/</loc>
   </url><url>
     <loc>/courses/opensource-means-business/</loc>
     <lastmod>2018-11-14T19:02:50-07:00</lastmod>
+  </url><url>
+    <loc>/posts/data-security-in-storage/</loc>
+  </url><url>
+    <loc>/posts/logging-in-java/</loc>
+  </url><url>
+    <loc>/posts/opensource-means-business/</loc>
   </url><url>
     <loc>/courses/</loc>
     <lastmod>2018-11-14T19:02:50-07:00</lastmod>

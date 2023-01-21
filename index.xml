@@ -8,6 +8,33 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 14 Nov 2018 19:02:50 -0700</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Spring Boot 3 Upgrad(Ed)</title>
+      <link>/posts/spring-boot-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/spring-boot-3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Open Source means Business</title>
+      <link>/courses/opensource-means-business/</link>
+      <pubDate>Wed, 14 Nov 2018 19:02:50 -0700</pubDate>
+      
+      <guid>/courses/opensource-means-business/</guid>
+      <description>Open Source is a stupid idea Foundation of Software Talent Company System - Govt/Educaion Definition “Opensource means technology that is run by some great people who does not care about much money and makes cheap business solutions.” Testing Times Software Development - Developing Software Work around the product - work on the product One Solution fits all to One Solutions fits with all Design for destruction THE CHANGE Software Recipes THE Skills THE Mindset THE Purpose Lets Buy the Skill Fresh Talent Experience Fresh Talent Tier 1 Strong Academics Good English Experience DS and Algo Value of Words The REAL Problem 3 Months Notice Company Reduce Salary to 50% (9L) Market Resumes Pachai gets an offer 11L 2 Month More Pachai gets an offer 13L 1 Month More Pachai gets an offer 15L 15 Days More Pachai gets an offer 17L Just few Days More ?</description>
+    </item>
+    
+    <item>
+      <title>Data Security - Storage ( Part 1 )</title>
+      <link>/posts/data-security-in-storage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/data-security-in-storage/</guid>
+      <description>Data Deidentify - Identify</description>
+    </item>
+    
+    <item>
       <title>Logging in Java</title>
       <link>/posts/logging-in-java/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -27,15 +54,6 @@ Log data contains information such as out of memory exception or hard disk error
       <description>Opensource is everywhere today. Be it the mobiles we use or cloud, Opensource is behind most of the things we enjoy today. What is it really ?
 Opensource means technology that is run by some great people who does not care about much money and makes cheap business solutions.
 Fair ?! Might be few decades ago. An Idea which is considered stupid by many, slowly and steadily it proved its worth.</description>
-    </item>
-    
-    <item>
-      <title>Open Source means Business</title>
-      <link>/courses/opensource-means-business/</link>
-      <pubDate>Wed, 14 Nov 2018 19:02:50 -0700</pubDate>
-      
-      <guid>/courses/opensource-means-business/</guid>
-      <description>Open Source is a stupid idea Foundation of Software Talent Company System - Govt/Educaion Definition “Opensource means technology that is run by some great people who does not care about much money and makes cheap business solutions.” Testing Times Software Development - Developing Software Work around the product - work on the product One Solution fits all to One Solutions fits with all Design for destruction THE CHANGE Software Recipes THE Skills THE Mindset THE Purpose Lets Buy the Skill Fresh Talent Experience Fresh Talent Tier 1 Strong Academics Good English Experience DS and Algo Value of Words The REAL Problem 3 Months Notice Company Reduce Salary to 50% (9L) Market Resumes Pachai gets an offer 11L 2 Month More Pachai gets an offer 13L 1 Month More Pachai gets an offer 15L 15 Days More Pachai gets an offer 17L Just few Days More ?</description>
     </item>
     
     <item>
