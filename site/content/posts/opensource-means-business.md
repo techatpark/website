@@ -1,6 +1,6 @@
 ---
 title: Why Opensource is a serious business (today) ?
-weight: 1
+weight: 3
 authors:
   - sathishk
   - rmhari

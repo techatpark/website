@@ -1,6 +1,6 @@
 ---
 title: Logging in Java
-weight: 1
+weight: 2
 authors:
   - rmhari
   - sathishk
