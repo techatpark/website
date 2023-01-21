@@ -16,16 +16,13 @@
     </item>
     
     <item>
-      <title>Data Security - Storage ( Part 1 )</title>
+      <title>Data Security in Java</title>
       <link>/posts/data-security-in-storage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/posts/data-security-in-storage/</guid>
-      <description>Storage data security refers to the measures and techniques used to protect data from unauthorized access, modification, or destruction while in storage.
-components of storage data security:
-Crypytography Access control Backup and disaster recovery Firewall and intrusion detection Physical security Compliance Data De-identification Data Governance Crypytography is used to protect your sensitive data using one of the below
-Pseudonymized Anonymized Generalized
-Overall, storage data security is a critical component of protecting sensitive information, and organizations should implement a comprehensive security strategy that includes all of these components.</description>
+      <description>Storage data security refers to the measures and techniques used to protect data from unauthorized access, modification, or destruction while in storage. Overall, storage data security is a critical component of protecting sensitive information, and organizations should implement a comprehensive security strategy that includes all of these components. Regularly monitoring, testing and updating the security measures will help to ensure that data is kept secure.
+Crypytography is used to protect your sensitive data using one of the below</description>
     </item>
     
     <item>
