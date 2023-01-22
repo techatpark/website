@@ -43,3 +43,5 @@ In addition to these methods, there are also several standards and frameworks th
 3. https://medium.com/@chintanaw/java-string-masking-performance-why-you-should-stop-worrying-and-rewrite-everything-in-c-849a79c04d0f
 4. https://www.bbc.com/news/technology-60144498
 5. https://www.baeldung.com/spring-security-5-default-password-encoder
+6. https://github.com/p-h-c/phc-winner-argon2
+7. https://www.twelve21.io/how-to-choose-the-right-parameters-for-argon2/
