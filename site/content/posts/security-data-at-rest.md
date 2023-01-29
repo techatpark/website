@@ -1,14 +1,25 @@
 ---
-title: Data Security in Java
+title: Basics of Cybersecurity - Data At Rest
 weight: 2
 authors:
   - vijaywhat
-authorimage: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOd256TcC6vcaQ99TYzoP0pBbch9_Q-bbrmw&usqp=CAU'
 ---
 
-Storage data security refers to the measures and techniques used to protect data from unauthorized access, modification, or destruction while in storage. Overall, storage data security is a critical component of protecting sensitive information, and organizations should implement a comprehensive security strategy that includes all of these components. Regularly monitoring, testing and updating the security measures will help to ensure that data is kept secure.
+When it comes to protecting confidential information, we find that clients require different approaches or pose different protection needs. Some clients need to protect the information on their mobile computers or laptops in case they are lost. Others want to keep their documentation protected on file servers so that it can even be protected from improper access by IT staff. Sometimes some customers need to protect documentation when it travels attached to an email because they use managed email servers or in the cloud. Some customers ask to protect the documentation when it is sent to third parties or even internally in order to minimize the possibility of it being copied, unprotected or accessed by inappropriate users.
 
-Crypytography is used to protect your sensitive data using one of the below
+The three states of data
+
+We can consider three states for information or data:
+
+1. Data at rest: By this term we mean data that is not being accessed and is stored on a physical or logical medium. Examples may be files stored on file servers, records in databases, documents on flash drives, hard disks etc.
+
+2. Data in transit: Data that travels through an email, web, collaborative work applications such as Slack or Microsoft Teams, instant messaging, or any type of private or public communication channel. It’s information that is traveling from one point to another.
+
+3. Data in use: When it is opened by one or more applications for its treatment or and consumed or accessed by users.
+
+![Data Security](https://www.sealpath.com/wp-content/uploads/2014/08/three-states-of-data-980x479.png "Data Security")
+
+Data at rest refers to the measures and techniques used to protect data from unauthorized access, modification, or destruction while in storage. Overall, Data at rest is a critical component of protecting sensitive information, and organizations should implement a comprehensive security strategy that includes all of these components. Regularly monitoring, testing and updating the security measures will help to ensure that data is kept secure. to protect your sensitive data using one of the below
 
 1. Pseudonymized
 2. Anonymized
@@ -45,3 +56,4 @@ In addition to these methods, there are also several standards and frameworks th
 5. https://www.baeldung.com/spring-security-5-default-password-encoder
 6. https://github.com/p-h-c/phc-winner-argon2
 7. https://www.twelve21.io/how-to-choose-the-right-parameters-for-argon2/
+8. https://digitalguardian.com/blog/data-protection-data-in-transit-vs-data-at-rest
