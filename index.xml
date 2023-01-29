@@ -17,6 +17,15 @@
     </item>
     
     <item>
+      <title>Basics of Cybersecurity - Data At Rest </title>
+      <link>/courses/security-data-at-rest/</link>
+      <pubDate>Wed, 14 Nov 2018 19:02:50 -0700</pubDate>
+      
+      <guid>/courses/security-data-at-rest/</guid>
+      <description>Basics of Cybersecurity Data At Rest Data at rest By this term we mean data that is not being accessed and is stored on a physical or logical medium. Examples may be files stored on file servers, records in databases, documents on flash drives, hard disks etc. Techniques Pseudonymized Anonymized Generalized Terminologies Plain Text Cipher Text Secret Key Data de-identification Data identification Pseudonymized The term “pseudonymity” refers to using a different name on social media, such as a pen-name or nick-name.</description>
+    </item>
+    
+    <item>
       <title>Open Source means Business</title>
       <link>/courses/opensource-means-business/</link>
       <pubDate>Wed, 14 Nov 2018 19:02:50 -0700</pubDate>
@@ -26,13 +35,12 @@
     </item>
     
     <item>
-      <title>Data Security in Java</title>
-      <link>/posts/data-security-in-storage/</link>
+      <title>Basics of Cybersecurity - Data At Rest</title>
+      <link>/posts/security-data-at-rest/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/posts/data-security-in-storage/</guid>
-      <description>Storage data security refers to the measures and techniques used to protect data from unauthorized access, modification, or destruction while in storage. Overall, storage data security is a critical component of protecting sensitive information, and organizations should implement a comprehensive security strategy that includes all of these components. Regularly monitoring, testing and updating the security measures will help to ensure that data is kept secure.
-Crypytography is used to protect your sensitive data using one of the below</description>
+      <guid>/posts/security-data-at-rest/</guid>
+      <description>When it comes to protecting confidential information, we find that clients require different approaches or pose different protection needs. Some clients need to protect the information on their mobile computers or laptops in case they are lost. Others want to keep their documentation protected on file servers so that it can even be protected from improper access by IT staff. Sometimes some customers need to protect documentation when it travels attached to an email because they use managed email servers or in the cloud.</description>
     </item>
     
     <item>

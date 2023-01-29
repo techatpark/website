@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 14 Nov 2018 19:02:50 -0700</lastBuildDate><atom:link href="/courses/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Basics of Cybersecurity - Data At Rest </title>
+      <link>/courses/security-data-at-rest/</link>
+      <pubDate>Wed, 14 Nov 2018 19:02:50 -0700</pubDate>
+      
+      <guid>/courses/security-data-at-rest/</guid>
+      <description>Basics of Cybersecurity Data At Rest Data at rest By this term we mean data that is not being accessed and is stored on a physical or logical medium. Examples may be files stored on file servers, records in databases, documents on flash drives, hard disks etc. Techniques Pseudonymized Anonymized Generalized Terminologies Plain Text Cipher Text Secret Key Data de-identification Data identification Pseudonymized The term “pseudonymity” refers to using a different name on social media, such as a pen-name or nick-name.</description>
+    </item>
+    
+    <item>
       <title>Open Source means Business</title>
       <link>/courses/opensource-means-business/</link>
       <pubDate>Wed, 14 Nov 2018 19:02:50 -0700</pubDate>
