@@ -7,7 +7,7 @@
     {{ range $elem_index, $testimonial := .Site.Data.testimonials}}
     <div class="carousel-item{{ if eq $elem_index "martyn" }} active{{ end }}">
       <figure class="text-end">
-        <blockquote class="blockquote text-white">
+        <blockquote class="blockquote">
           <p>{{ $testimonial.text }}</p>
         </blockquote>
         <figcaption class="blockquote-footer text-primary">
@@ -20,17 +20,15 @@
 </div>
 <!-- Masthead-->
 <div class="masthead">
-    <div class="masthead-content text-white">
+    <div class="masthead-content">
         <div class="container-fluid px-1 px-lg-0">
           <img src="/images/logo_full.svg" alt="brandimg" width="160px" height="160px">
             <h1 class="fst-italic mb-2">BUILDING PRO-GRAMMERS!</h1>
-            <p class="mb-5">We help deserving candidates to find their first software job by providing free training.
-              Our goal is to make sure the right opportunity meets the right talent!</p>
+            <p class="mb-5">Helping deserving candidates launch their software career by providing free training and mentorship.!</p>
             <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                 <!-- Email address input-->
                 <div class="row">
                     <div class="col-auto"><a class="btn btn-primary" href="/our-method">Learn More</a></div>
-                    <div class="col-auto"><a class="btn btn-secondary" href="/schoolership">Build With Us</a></div>
                 </div>
 
                 
