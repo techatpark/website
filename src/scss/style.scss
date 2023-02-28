@@ -15,20 +15,6 @@ html {
 body {
   height: 100%;
   position: relative;
-
-  // Overlay for the body element
-  //
-  // This overlay will add a colored transparent overlay
-  // to the background image
-
-  &:before {
-      content: '';
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-  }
 }
 
 // Styling for the background image element
