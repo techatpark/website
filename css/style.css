@@ -10768,14 +10768,6 @@ body {
   height: 100%;
   position: relative;
 }
-body:before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
 
 img.bg-image {
   position: fixed;
