@@ -7,15 +7,6 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="/tags/kjskj/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Spring Boot 3 Upgrad(Ed)</title>
-      <link>/posts/spring-boot-3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/spring-boot-3/</guid>
-      <description>Upgrade is usually considered optional in a working software. But they can cost heavily if not done ontime. (like what happened to those who sticked to java 8 even after java 19). For Spring Boot users, one of the major upgrade is from Spring Boot 2 to 3. One needs clear understanding and plan to make this without (much of) a mess. I will cover the lesons i learned during upgrading a live application to Spring boot 3.</description>
-    </item>
-    
-    <item>
       <title>Logging in Java</title>
       <link>/posts/logging-in-java/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -24,17 +15,6 @@
       <description>Logging Greatness:
 For many years, logs have been an essential part of troubleshooting application and infrastructure performance. They help provide visibility into how our applications are running on each of the various infrastructure components.
 Log data contains information such as out of memory exception or hard disk errors. This is very helpful information that will help us identify the “why” behind a problem either that a user has brought to our attention or that we have uncovered.</description>
-    </item>
-    
-    <item>
-      <title>Why Opensource is a serious business (today) ?</title>
-      <link>/posts/opensource-means-business/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/opensource-means-business/</guid>
-      <description>Opensource is everywhere today. Be it the mobiles we use or cloud, Opensource is behind most of the things we enjoy today. What is it really ?
-Opensource means technology that is run by some great people who does not care about much money and makes cheap business solutions.
-Fair ?! Might be few decades ago. An Idea which is considered stupid by many, slowly and steadily it proved its worth.</description>
     </item>
     
   </channel>
