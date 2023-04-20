@@ -1,21 +1,21 @@
 {{ define "main" }}
 
 <!-- Background Image-->
-<img class="bg-image" src="/images/bg.jpg"/>
+
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     {{ range $elem_index, $testimonial := .Site.Data.testimonials}}
-    <div class="carousel-item{{ if eq $elem_index "martyn" }} active{{ end }}">
-      <figure class="text-end">
-        <blockquote class="blockquote">
-          <p>{{ $testimonial.text }}</p>
-        </blockquote>
-        <figcaption class="blockquote-footer text-primary">
-          {{ $testimonial.name }} , <cite title="Source Title">{{ $testimonial.company }}</cite>
-        </figcaption>
-      </figure>
-    </div>
-{{end}}
+      <div class="carousel-item{{ if eq $elem_index "martyn" }} active{{ end }}">
+        <figure class="text-end">
+          <blockquote class="blockquote">
+            <p>{{ $testimonial.text }}</p>
+          </blockquote>
+          <figcaption class="blockquote-footer text-primary">
+            {{ $testimonial.name }} , <cite title="Source Title">{{ $testimonial.company }}</cite>
+          </figcaption>
+        </figure>
+      </div>
+    {{end}}
   </div>
 </div>
 <!-- Masthead-->
