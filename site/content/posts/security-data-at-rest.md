@@ -1,6 +1,6 @@
 ---
 title: Basics of Cybersecurity - Data At Rest
-weight: 2
+weight: 3
 authors:
   - vijaywhat
 ---
