@@ -13,7 +13,19 @@ But what exactly are microservices, and why is there so much pressure in the ind
 
 Before we dive into the technical details, let's take a step back and explore the basics. What are monoliths and microservices, and how are they connected? By understanding the fundamental principles behind these two architectures, we can better appreciate the benefits and drawbacks of each. So let's get started!
 
-### Chapter 2: Monoliths and Microservices as Families
+### Chapter 2: The Microservices Trap: A Cautionary Tale
+
+Meet Mr. Developer, a software engineer who was running a monolithic REST API application on a single Tomcat instance connected to MySQL. He had heard a lot of buzz about microservices and saw his competitors successfully adopting this architecture, so he decided to follow suit. Mr. Developer split his monolith into two microservices, each with its own database: MySQL and MongoDB.
+
+However, Mr. Developer quickly realized that the transition was not as smooth as he expected. He encountered a few problems that he hadn't anticipated:
+
+1. **Cloud cost:** What was previously running on just two nodes (Tomcat and MySQL) now required at least six nodes, including an API gateway node, two services nodes, a MySQL server, a MongoDB server, and additional nodes for distributed logging and tracing.
+2. **Performance:** Each REST call now needed to be encoded and decoded twice, resulting in additional processing time that slowed down the system.
+3. **Complexity:** As he separated the services, his team also got split. Additionally, Mr. Developer needed to acquire new skills like MongoDB, distributed logging, and tracing, which resulted in additional complexity.
+
+Mr. Developer found himself dealing with complexity, increased costs, and lower performing software. He couldn't help but wonder what had gone wrong in his transition from monolith to microservices.
+
+### Chapter 3: Monoliths and Microservices as Families
 
 #### The Joint Family: Monoliths
 In the context of software engineering, a monolith can be thought of as a joint family - a large and tightly-knit group of software components that work together to achieve a common goal.
@@ -34,7 +46,7 @@ Similarly, if you choose microservices without carefully considering the complex
 
 In short, the key to making the right choice is to carefully evaluate your software requirements and choose the architecture that best aligns with those needs. This may require some trial and error, but in the long run it will pay off in terms of better performance, greater scalability, and easier maintenance.
 
-### Chapter 3: Microservices: Deconstructing the Vada Pav
+### Chapter 4: Microservices: Deconstructing the Vada Pav
 
 Let's take a closer look at microservices by comparing it to a popular Indian street food called Vada Pav. Just like the Vada Pav, microservices consist of several individual components that work together to create a cohesive end product.
 
@@ -52,7 +64,7 @@ Similarly, Java-based microservices also have three main components:
 
 In an ideal world of service-oriented development, these four components (JVM, frameworks and tools, our own services, and external services) should be flexible enough to be replaced, just like how one can replace the bun or masala topping in a Vada Pav.
 
-### Conclution
+### Conclusion
 
 1. Monolith is not a bad approach if it works properly. In some cases, a monolithic architecture can be sufficient to meet the needs of the application and its users.
 2. It's generally not advisable to start a new project using a microservices architecture. This approach adds complexity and can be challenging to manage, especially for smaller teams.
