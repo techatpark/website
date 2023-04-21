@@ -55,6 +55,15 @@ Log data contains information such as out of memory exception or hard disk error
     </item>
     
     <item>
+      <title>Beyond Competitive Programming: The Flaws in Software Interview Process</title>
+      <link>/posts/beyond-competitive-programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/beyond-competitive-programming/</guid>
+      <description>Recently, I had a conversation with a college student who was interested in finding job opportunities at Tier 1 (MAANG/FAANG)companies (those offering high salaries). He asked me for advice and I shared what I knew about microservices, cloud computing, and JAMstack. However, he insisted that he was good at competitive programming and only wanted a job where he would be asked to solve programming puzzles every day and paid a high salary in return.</description>
+    </item>
+    
+    <item>
       <title>Post No. 1</title>
       <link>/our-achievements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
