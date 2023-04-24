@@ -46,6 +46,26 @@ Log data contains information such as out of memory exception or hard disk error
     </item>
     
     <item>
+      <title>Microserices - Not a Binary Choice</title>
+      <link>/courses/microservices-not-a-binary-choice/</link>
+      <pubDate>Wed, 14 Nov 2018 19:02:50 -0700</pubDate>
+      
+      <guid>/courses/microservices-not-a-binary-choice/</guid>
+      <description>Microserices - Not a Binary Choice SATHISH KUMAR THIYAGARAJAN Chapter 1: The Great Debate The Challenges team is struggling to stay productive
+application isn&#39;t scalable enough
+your response times are sluggish
+hard time clearing those job interviews
+Microservices The Transformation Monolith
+Microservices
+Modular Monolith
+Chapter 2: A Cautionary Tale The Outcome Cost
+Complexity
+Lack of Standard
+Performance: APP and Team
+Only for rich ?! Chapter 3: Monoliths and Microservices as Families Monolithic Microservices Easy to Split.</description>
+    </item>
+    
+    <item>
       <title>Basics of Cybersecurity - Data At Rest</title>
       <link>/posts/security-data-at-rest/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

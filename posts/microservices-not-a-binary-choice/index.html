@@ -97,7 +97,7 @@
  
 
   <main class="container-fluid w-100 h-100">
-    <div class="row py-5 w-100 h-100" id="main-container">
+    <div class="row w-100 h-100" id="main-container">
       
 
 <article>
@@ -115,13 +115,14 @@
 <p>As software engineers, we face numerous challenges on a daily basis. Perhaps your team is struggling to stay productive, your application isn&rsquo;t scalable enough, or your response times are sluggish. Or maybe you&rsquo;re simply having a hard time acing those job interviews. It can be overwhelming to tackle each problem individually, which is why many software gurus are promoting a single solution for all of these issues: microservices.</p>
 <p>But what exactly are microservices, and why is there so much pressure in the industry to adopt them? For starters, it seems like monoliths - the traditional way of building software - have become outdated and old-fashioned. Yet at the same time, many experts are now recommending a hybrid approach known as modular monoliths.</p>
 <p>Before we dive into the technical details, let&rsquo;s take a step back and explore the basics. What are monoliths and microservices, and how are they connected? By understanding the fundamental principles behind these two architectures, we can better appreciate the benefits and drawbacks of each. So let&rsquo;s get started!</p>
-<h3 id="chapter-2-the-microservices-trap-a-cautionary-tale">Chapter 2: The Microservices Trap: A Cautionary Tale</h3>
+<h3 id="chapter-2-a-cautionary-tale">Chapter 2: A Cautionary Tale</h3>
 <p>Meet Mr. Developer, a software engineer who was running a monolithic REST API application on a single Tomcat instance connected to MySQL. He had heard a lot of buzz about microservices and saw his competitors successfully adopting this architecture, so he decided to follow suit. Mr. Developer split his monolith into two microservices, each with its own database: MySQL and MongoDB.</p>
 <p>However, Mr. Developer quickly realized that the transition was not as smooth as he expected. He encountered a few problems that he hadn&rsquo;t anticipated:</p>
 <ol>
 <li><strong>Cloud cost:</strong> What was previously running on just two nodes (Tomcat and MySQL) now required at least six nodes, including an API gateway node, two services nodes, a MySQL server, a MongoDB server, and additional nodes for distributed logging and tracing.</li>
 <li><strong>Performance:</strong> Each REST call now needed to be encoded and decoded twice, resulting in additional processing time that slowed down the system.</li>
 <li><strong>Complexity:</strong> As he separated the services, his team also got split. Additionally, Mr. Developer needed to acquire new skills like MongoDB, distributed logging, and tracing, which resulted in additional complexity.</li>
+<li><strong>Lack of Standard</strong> Due to the lack of standard he has to rework on things that was not even in his coontrol. (E.g Open Feign Deprecation, Outdated Netflix Libraries)</li>
 </ol>
 <p>Mr. Developer found himself dealing with complexity, increased costs, and lower performing software. He couldn&rsquo;t help but wonder what had gone wrong in his transition from monolith to microservices.</p>
 <h3 id="chapter-3-monoliths-and-microservices-as-families">Chapter 3: Monoliths and Microservices as Families</h3>
