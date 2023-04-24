@@ -13,7 +13,7 @@ But what exactly are microservices, and why is there so much pressure in the ind
 
 Before we dive into the technical details, let's take a step back and explore the basics. What are monoliths and microservices, and how are they connected? By understanding the fundamental principles behind these two architectures, we can better appreciate the benefits and drawbacks of each. So let's get started!
 
-### Chapter 2: The Microservices Trap: A Cautionary Tale
+### Chapter 2: A Cautionary Tale
 
 Meet Mr. Developer, a software engineer who was running a monolithic REST API application on a single Tomcat instance connected to MySQL. He had heard a lot of buzz about microservices and saw his competitors successfully adopting this architecture, so he decided to follow suit. Mr. Developer split his monolith into two microservices, each with its own database: MySQL and MongoDB.
 
@@ -22,6 +22,7 @@ However, Mr. Developer quickly realized that the transition was not as smooth as
 1. **Cloud cost:** What was previously running on just two nodes (Tomcat and MySQL) now required at least six nodes, including an API gateway node, two services nodes, a MySQL server, a MongoDB server, and additional nodes for distributed logging and tracing.
 2. **Performance:** Each REST call now needed to be encoded and decoded twice, resulting in additional processing time that slowed down the system.
 3. **Complexity:** As he separated the services, his team also got split. Additionally, Mr. Developer needed to acquire new skills like MongoDB, distributed logging, and tracing, which resulted in additional complexity.
+4. **Lack of Standard** Due to the lack of standard he has to rework on things that was not even in his coontrol. (E.g Open Feign Deprecation, Outdated Netflix Libraries)
 
 Mr. Developer found himself dealing with complexity, increased costs, and lower performing software. He couldn't help but wonder what had gone wrong in his transition from monolith to microservices.
 
