@@ -27,6 +27,8 @@ Static code analyzers or linters play a crucial role in evaluating code quality 
 
 Static code analyzers/linters serve as automated code reviewers, providing immediate feedback to developers as they write code. By enforcing coding best practices and style guidelines, they ensure consistency across the codebase and promote readability. By addressing these issues early on, developers can improve code maintainability and reduce the likelihood of encountering bugs or issues in the future.
 
+Control Check Style by rule
+
 Aspect 2: Unit Testing - Ensuring Functionality and Reliability
 
 Unit testing is a fundamental practice in software development aimed at verifying the correctness of individual units or components of code. Units are isolated and tested independently, ensuring that each unit performs as expected. By writing test cases that cover different scenarios, developers can validate the behavior and functionality of their code.
@@ -38,6 +40,8 @@ Aspect 3: Test Coverage - Gauging the Effectiveness of Testing
 Test coverage measures the extent to which the code is exercised by test cases. It quantifies the percentage of code that is executed during testing. High test coverage indicates that a significant portion of the codebase is thoroughly tested, reducing the likelihood of undetected bugs or untested code paths.
 
 Test coverage is an essential metric in assessing code quality. It helps identify areas of the codebase that lack adequate testing, allowing developers to prioritize and add additional test cases as needed. By striving for high test coverage, developers can ensure that critical functionalities are well-tested, enhancing the robustness and reliability of the software.
+
+Control not bty ration but focus
 
 Aspect 4: SonarLint - Real-time Code Quality Feedback
 
