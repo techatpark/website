@@ -44,5 +44,15 @@ Log data contains information such as out of memory exception or hard disk error
       <description>Recently, I had a conversation with a college student who was interested in finding job opportunities at Tier 1 (MAANG/FAANG)companies (those offering high salaries). He asked me for advice and I shared what I knew about microservices, cloud computing, and JAMstack. However, he insisted that he was good at competitive programming and only wanted a job where he would be asked to solve programming puzzles every day and paid a high salary in return.</description>
     </item>
     
+    <item>
+      <title>Understanding Code Quality: Building Software that Works, and Works Well</title>
+      <link>/posts/code-quality-basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/code-quality-basics/</guid>
+      <description>Introduction: When it comes to software development, there is a significant difference between working software and quality software. While the former focuses on achieving functional requirements and basic functionality, the latter encompasses a broader spectrum of factors that contribute to a software system&amp;rsquo;s overall excellence. Code quality plays a crucial role in determining the reliability, maintainability, and efficiency of software applications.
+Defining Code Quality: Code quality refers to the measure of how well a software system meets certain characteristics or attributes that contribute to its overall excellence.</description>
+    </item>
+    
   </channel>
 </rss>
