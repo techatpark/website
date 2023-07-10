@@ -24,5 +24,15 @@
       <description>Recently, I had a conversation with a college student who was interested in finding job opportunities at Tier 1 (MAANG/FAANG)companies (those offering high salaries). He asked me for advice and I shared what I knew about microservices, cloud computing, and JAMstack. However, he insisted that he was good at competitive programming and only wanted a job where he would be asked to solve programming puzzles every day and paid a high salary in return.</description>
     </item>
     
+    <item>
+      <title>Persistent Problems with Persistence: The Evolution of Java Database Interaction</title>
+      <link>/posts/problems-with-persistence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/problems-with-persistence/</guid>
+      <description>Introduction: Over the years, Java&amp;rsquo;s interaction with relational databases has undergone significant transformations. As the backbone of enterprise application development, the way Java applications connect with and interact with databases has evolved to meet the demands of modern software development. These changes have not only influenced the way developers write code but also brought about major migrations and improvements in the database connectivity landscape.
+Code migrations are no small feat and often come with considerable costs and time investments.</description>
+    </item>
+    
   </channel>
 </rss>
