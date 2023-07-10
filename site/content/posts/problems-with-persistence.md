@@ -1,5 +1,5 @@
 ---
-title: 'Persistent Problems with Persistence: The Evolution of Java's Database Interaction'
+title: 'Persistent Problems with Persistence: The Evolution of Java Database Interaction'
 weight: 6
 authors:
   - sathishk
