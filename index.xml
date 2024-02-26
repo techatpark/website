@@ -35,14 +35,12 @@
     </item>
     
     <item>
-      <title>Logging in Java</title>
-      <link>/posts/logging-in-java/</link>
+      <title>Introducing SJSON: A Tailor-Made and Hackable JSON Parser for Optimized API Development</title>
+      <link>/posts/sjson/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/posts/logging-in-java/</guid>
-      <description>Logging Greatness:
-For many years, logs have been an essential part of troubleshooting application and infrastructure performance. They help provide visibility into how our applications are running on each of the various infrastructure components.
-Log data contains information such as out of memory exception or hard disk errors. This is very helpful information that will help us identify the “why” behind a problem either that a user has brought to our attention or that we have uncovered.</description>
+      <guid>/posts/sjson/</guid>
+      <description>Introduction During a casual discussion at the Bangalore Java User Group, the topic of JSON parsers sparked a debate on their pros and cons. This led to the inception of an innovative idea – creating yet another JSON parser, one that is tailor-made and hackable to cater specifically to the needs of API development. In this blog post, we&amp;rsquo;ll delve into the reasons behind the creation of SJSON and explore its unique features.</description>
     </item>
     
     <item>
@@ -104,12 +102,14 @@ Code migrations are no small feat and often come with considerable costs and tim
     </item>
     
     <item>
-      <title>Introducing SJSON: A Tailor-Made and Hackable JSON Parser for Optimized API Development</title>
-      <link>/posts/sjson/</link>
+      <title>Logging in Java</title>
+      <link>/posts/logging-in-java/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/posts/sjson/</guid>
-      <description>Introduction During a casual discussion at the Bangalore Java User Group, the topic of JSON parsers sparked a debate on their pros and cons. This led to the inception of an innovative idea – creating yet another JSON parser, one that is tailor-made and hackable to cater specifically to the needs of API development. In this blog post, we&amp;rsquo;ll delve into the reasons behind the creation of SJSON and explore its unique features.</description>
+      <guid>/posts/logging-in-java/</guid>
+      <description>Logging Greatness:
+For many years, logs have been an essential part of troubleshooting application and infrastructure performance. They help provide visibility into how our applications are running on each of the various infrastructure components.
+Log data contains information such as out of memory exception or hard disk errors. This is very helpful information that will help us identify the “why” behind a problem either that a user has brought to our attention or that we have uncovered.</description>
     </item>
     
     <item>
