@@ -8,19 +8,18 @@ tags:
 authorimage: 'https://avatars.githubusercontent.com/u/89501520?v=4'
 ---
 
-# Introduction
-
 During a casual discussion at the Bangalore Java User Group, the topic of JSON parsers sparked a debate on their pros and cons. This led to the inception of an innovative idea – creating yet another JSON parser, one that is tailor-made and hackable to cater specifically to the needs of API development. In this blog post, we'll delve into the reasons behind the creation of **SJSON** and explore its unique features.
-
-## Tailor-Made for API Servers
-
-In the realm of Java development, we are accustomed to using popular JSON parsers like Org JSON, Jackson, and Gson for various purposes. However, these parsers serve a broad spectrum of applications, including text editors, databases, and API servers. **SJSON** sets itself apart by focusing exclusively on the needs of API servers.
 
 ## Why Another Parser?
 
+### Tailor-Made for API Servers
+
+In the realm of Java development, we are accustomed to using popular JSON parsers like Org JSON, Jackson, and Gson for various purposes. However, these parsers serve a broad spectrum of applications, including text editors, databases, and API servers. **SJSON** sets itself apart by focusing exclusively on the needs of API servers.
+
+
 Unlike text editors that use JSON parsers to pinpoint errors, API servers typically only require a simple validation – is the JSON data valid or not? **SJSON** aligns with this need, avoiding the complexity of detailed error reporting. Moreover, unlike databases that perform querying on JSON data, API servers don't require such functionality. Hence, a specialized parser for API servers makes sense.
 
-## Hackable for Custom Rules
+### Hackable for Custom Rules
 
 One of the standout features of **SJSON** is its hackability. Consider a scenario where a standard JSON parser accepts keys with special characters, such as emojis. In an API server environment, however, you may want stricter rules, such as allowing only alphanumeric keys.
 
