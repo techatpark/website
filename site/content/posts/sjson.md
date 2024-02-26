@@ -21,7 +21,16 @@ Unlike text editors that use JSON parsers to pinpoint errors, API servers typica
 
 ### Hackable for Custom Rules
 
-One of the standout features of **SJSON** is its hackability. Consider a scenario where a standard JSON parser accepts keys with special characters, such as emojis. In an API server environment, however, you may want stricter rules, such as allowing only alphanumeric keys.
+One of the standout features of **SJSON** is its hackability. Consider a scenario where a standard JSON parser accepts keys with special characters, such as emojis. 
+
+```json
+{
+"hi\"" : "Vijay",
+"😀" : "I am emojey key"
+}
+```
+
+In an API server environment, however, you may want stricter rules, such as allowing only alphanumeric keys.
 
 ```json
 {
