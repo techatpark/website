@@ -35,6 +35,15 @@
     </item>
     
     <item>
+      <title>Introducing SJSON: A Tailor-Made and Hackable JSON Parser for Optimized API Development</title>
+      <link>/posts/sjson/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sjson/</guid>
+      <description>Introduction During a casual discussion at the Bangalore Java User Group, the topic of JSON parsers sparked a debate on their pros and cons. This led to the inception of an innovative idea – creating yet another JSON parser, one that is tailor-made and hackable to cater specifically to the needs of API development. In this blog post, we&amp;rsquo;ll delve into the reasons behind the creation of SJSON and explore its unique features.</description>
+    </item>
+    
+    <item>
       <title>Logging in Java</title>
       <link>/posts/logging-in-java/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
