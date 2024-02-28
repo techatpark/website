@@ -14,10 +14,18 @@ During a casual discussion at the Bangalore Java User Group, the topic of JSON p
 
 ### Tailor-Made for API Servers
 
-In the realm of Java development, we are accustomed to using popular JSON parsers like Org JSON, Jackson, and Gson for various purposes. However, these parsers serve a broad spectrum of applications, including text editors, databases, and API servers. **SJSON** sets itself apart by focusing exclusively on the needs of API servers.
+In the realm of Java development, we are accustomed to using popular JSON parsers like Org JSON, Jackson, and Gson for various purposes. However, these parsers serve a broad spectrum of applications, including 
+
+- Yext editors
+- Databases
+- API servers. 
+
+**SJSON** sets itself apart by focusing exclusively on the needs of API servers.
 
 
-Unlike text editors that use JSON parsers to pinpoint errors, API servers typically only require a simple validation – is the JSON data valid or not? **SJSON** aligns with this need, avoiding the complexity of detailed error reporting. Moreover, unlike databases that perform querying on JSON data, API servers don't require such functionality. Hence, a specialized parser for API servers makes sense.
+Unlike text editors that use JSON parsers to pinpoint errors, API servers typically only require a simple validation – is the JSON data valid or not? **SJSON** aligns with this need, avoiding the complexity of detailed error reporting. 
+
+Unlike databases that perform querying on JSON data, API servers don't require such functionality. Hence, a specialized parser for API servers makes sense.
 
 ### Hackable for Custom Rules
 
@@ -25,8 +33,8 @@ One of the standout features of **SJSON** is its hackability. Consider a scenari
 
 ```json
 {
-"hi\"" : "Vijay",
-"😀" : "I am emojey key"
+  "hi\"":"Vijay",
+  "😀":"Web Dev"
 }
 ```
 
@@ -34,8 +42,8 @@ In an API server environment, however, you may want stricter rules, such as allo
 
 ```json
 {
-  "ace": "Vijay",
-  "efg": "I am emojey key"
+  "name":"Vijay",
+  "title":"Web Dev"
 }
 ```
 

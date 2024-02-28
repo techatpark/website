@@ -1,0 +1,75 @@
+---
+title: 'Introducing SJSON: A Tailor-Made and Hackable JSON Parser for Optimized API Development'
+date: 2018-11-14T19:02:50-07:00
+weight: 2
+extensions:
+- katex
+draft: false
+---
+
+<div class="slides">
+
+  <section>
+    <h2>Introducing SJSON</h2>
+    <small>A Tailor-Made and Hackable JSON Parser for Optimized API Development</small>    
+  </section>
+
+  <section>
+    <h4>JSON Parser Usecases</h4>
+    <ol>
+      <li>
+        Code Editors
+      </li>
+      <li>
+        Databases
+      </li>
+      <li>
+        API Servers
+      </li>
+  </ol>    
+  </section>
+
+  <section>
+    <h3>Tailor-Made</h3>
+  </section>
+
+  <section>
+    <h4>Code Editors vs API Servers</h4>
+    <blockquote>
+      text editors that use JSON parsers to pinpoint errors, API servers typically only require a simple validation – is the JSON data valid or not? 
+    </blockquote>    
+  </section>
+
+  <section>
+    <h4>Databases vs API Servers</h4>
+    <blockquote>
+      Unlike databases that perform querying on JSON data, API servers don't require such functionality.
+    </blockquote>    
+  </section>
+
+  <section>
+    <h3>Hackable</h3>
+  </section>
+
+  <section>
+    <h3>Which one is valid ?</h3>
+    <code>
+      {
+        "hi\"":"Vijay",
+        "😀":"Web Dev"
+      }
+    </code>
+    <br>
+    <code>
+      {
+        "name":"Vijay",
+        "title":"Web Dev"
+      }
+    </code>
+  </section>
+
+  <section>
+    <h3>Demo</h3>
+  </section>
+
+</div>
