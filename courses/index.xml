@@ -17,6 +17,15 @@
     </item>
     
     <item>
+      <title>Introducing SJSON: A Tailor-Made and Hackable JSON Parser for Optimized API Development</title>
+      <link>/courses/sjson/</link>
+      <pubDate>Wed, 14 Nov 2018 19:02:50 -0700</pubDate>
+      
+      <guid>/courses/sjson/</guid>
+      <description>Introducing SJSON A Tailor-Made and Hackable JSON Parser for Optimized API Development JSON Parser Usecases Code Editors Databases API Servers Tailor-Made Code Editors vs API Servers text editors that use JSON parsers to pinpoint errors, API servers typically only require a simple validation – is the JSON data valid or not? Databases vs API Servers Unlike databases that perform querying on JSON data, API servers don&#39;t require such functionality. Hackable Which one is valid ?</description>
+    </item>
+    
+    <item>
       <title>Open Source means Business</title>
       <link>/courses/opensource-means-business/</link>
       <pubDate>Wed, 14 Nov 2018 19:02:50 -0700</pubDate>
