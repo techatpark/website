@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 14 Nov 2018 19:02:50 -0700</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Empowering Tomorrow: Navigating the AI Landscape in Education and Beyond</title>
+      <link>/posts/empowering-with-ai/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/empowering-with-ai/</guid>
+      <description>AI is not a distant vision of the future; it has already permeated our lives, reshaping industries and challenging conventional notions of work and innovation. In the ongoing dialogue about AI, there are two prevalent perspectives: one prophesizes a future where AI replaces human roles and responsibilities, while the other dismisses AI as a mere buzzword, suggesting that it lacks the transformative power to bring about substantial change. As professionals navigating this evolving landscape, it is crucial to refrain from taking extreme sides and instead strive to understand the nuanced reality that lies somewhere in between.</description>
+    </item>
+    
+    <item>
       <title>Microserices - Not a Binary Choice</title>
       <link>/posts/microservices-not-a-binary-choice/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -23,6 +32,15 @@
       
       <guid>/courses/security-data-at-rest/</guid>
       <description>Basics of Cybersecurity Data At Rest Data at rest By this term we mean data that is not being accessed and is stored on a physical or logical medium. Examples may be files stored on file servers, records in databases, documents on flash drives, hard disks etc. Techniques Pseudonymized Anonymized Generalized Terminologies Plain Text Cipher Text Secret Key Data de-identification Data identification Pseudonymized The term “pseudonymity” refers to using a different name on social media, such as a pen-name or nick-name.</description>
+    </item>
+    
+    <item>
+      <title>Empowering Tomorrow: Navigating the AI Landscape in Education and Beyond</title>
+      <link>/courses/empowering-with-ai/</link>
+      <pubDate>Wed, 14 Nov 2018 19:02:50 -0700</pubDate>
+      
+      <guid>/courses/empowering-with-ai/</guid>
+      <description>- AI is not a distant vision of the future; it has already permeated our lives, reshaping industries and challenging conventional notions of work and innovation. - Two prevalent perspectives: one prophesizes a future where AI replaces human roles and responsibilities, while the other dismisses AI as a mere buzzword. - Professionals should refrain from taking extreme sides and strive to understand the nuanced reality that lies somewhere in between.</description>
     </item>
     
     <item>
