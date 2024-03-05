@@ -24,9 +24,14 @@ In the nascent days of computing, colossal machines with intricate setups were t
 
 The advent of desktops and laptops marked a significant shift. Larger corporations led the charge in software development, yet the barrier began to crumble. Software developers emerged as the bridge, making computational power more accessible. This era laid the foundation for a democratization of technology, as developers became instrumental in bringing the power of computation to a broader audience.
 
+![Generation 2 Computer](/images/gen2-cs_.jpg)
+
 ### Cloud and Opensource: The Startup Revolution
 
 A disruptive wave swept in with the rise of cloud computing and open-source technologies. Reduced setup costs and the elimination of complex infrastructure barriers resulted in a startup boom. This era not only expanded access to computational resources but also empowered entrepreneurs to innovate and create solutions. Computation became more democratized, leading to the vibrant startup ecosystem we witness today.
+
+
+![Generation 3 Computer](/images/gen3-cs_.jpeg)
 
 ### AI: Paving the Way for Personal Empowerment
 
@@ -35,6 +40,9 @@ The emergence of AI represents a paradigm shift. Unlike previous eras where indi
 The advent of AI is not merely another technological progression; it stands as a game-changing moment in history. AI transcends traditional paradigms, offering the potential to reshape how we plan and execute tasks. This shift signifies a move towards empowering individuals to take charge of problem-solving in ways previously unimaginable.
 
 In the next section, we will explore the profound impact of AI on major industries, focusing on Healthcare, Education, and Software Development.
+
+
+![Generation 3 Computer](/images/gen4-cs_.jpeg)
 
 ## Impact of AI on Industries
 
