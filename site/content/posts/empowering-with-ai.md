@@ -10,13 +10,15 @@ AI is not a distant vision of the future; it has already permeated our lives, re
 
 To unravel this complex narrative, let's delve into the historical timeline and evolution of computer science, a journey that provides valuable insights into the trajectory of AI and its transformative capabilities.
 
-Evolution of Technology Accessibility
+## Evolution of Technology Accessibility
 
 The journey of technology accessibility has witnessed remarkable transformations, bringing computational power from the hands of a privileged few to the fingertips of the common man.
 
-## Early Days: From Exclusive to Expensive
+### Early Days: From Exclusive to Expensive
 
 In the nascent days of computing, colossal machines with intricate setups were the exclusive domain of the affluent and privileged. Computational power was a luxury, and only a select group of scientists and researchers had access to these behemoth systems.
+
+![Generation 1 Computer](gen1-cs_.jpg)
 
 ### Desktops and Laptops: Breaking Corporate Barriers
 
