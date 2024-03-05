@@ -2,7 +2,7 @@
 title: 'Empowering Tomorrow: Navigating the AI Landscape in Education and Beyond'
 weight: 1
 authors:
-  - rmhari
+  - sathisk
 authorimage: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOd256TcC6vcaQ99TYzoP0pBbch9_Q-bbrmw&usqp=CAU'
 ---
 
