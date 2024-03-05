@@ -31,7 +31,7 @@ The advent of desktops and laptops marked a significant shift. Larger corporatio
 A disruptive wave swept in with the rise of cloud computing and open-source technologies. Reduced setup costs and the elimination of complex infrastructure barriers resulted in a startup boom. This era not only expanded access to computational resources but also empowered entrepreneurs to innovate and create solutions. Computation became more democratized, leading to the vibrant startup ecosystem we witness today.
 
 
-![Generation 3 Computer](/images/gen3-cs_.jpeg)
+![Generation 3 Computer](/images/gen3-cs.jpeg)
 
 ### AI: Paving the Way for Personal Empowerment
 
@@ -42,7 +42,7 @@ The advent of AI is not merely another technological progression; it stands as a
 In the next section, we will explore the profound impact of AI on major industries, focusing on Healthcare, Education, and Software Development.
 
 
-![Generation 3 Computer](/images/gen4-cs_.jpeg)
+![Generation 4 Computer](/images/gen4-cs.jpeg)
 
 ## Impact of AI on Industries
 
