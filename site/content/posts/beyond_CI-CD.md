@@ -7,7 +7,7 @@ authors:
 
 In the world of online education for rural government school students, accessibility and quality are vital. Gurukulams.com is an online learning portal that provides affordable and effective education, driven by the dedication of our community. Built by students for students, 80% of our contributors have little to no prior experience in software development. This requires a codebase that is both simple and secure to encourage widespread participation.
 
-**Our Approach**
+## Our Approach
 
 To ensure all contributors can engage effectively and securely, we implemented several key practices:
 
@@ -15,7 +15,7 @@ To ensure all contributors can engage effectively and securely, we implemented s
 - **ArchUnit**: ArchUnit ensures we follow architectural guidelines, keeping our system robust and scalable as new features are added.
 - **JaCoCo**: We use JaCoCo for code coverage analysis to ensure our codebase is thoroughly tested, aiming for 100% coverage to minimize bugs.
 
-**The Challenge**
+## The Challenge
 
 Despite following these CI/CD practices, we encountered an issue they couldn’t solve: technical debt from outdated dependencies and frameworks.
 
@@ -25,7 +25,7 @@ Think about it like this: When your phone gets a new Android update, you usually
 
 The core issue is that developers only upgrade when necessary. Regular and proactive updates are crucial to maintaining a healthy, secure, and efficient codebase.
 
-**Our Solution**
+## Our Solution
 
 To address technical debt and keep our codebase up-to-date, we implemented these steps:
 
