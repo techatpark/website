@@ -112,19 +112,19 @@
   </header>
 
   <p>In the world of online education for rural government school students, accessibility and quality are vital. Gurukulams.com is an online learning portal that provides affordable and effective education, driven by the dedication of our community. Built by students for students, 80% of our contributors have little to no prior experience in software development. This requires a codebase that is both simple and secure to encourage widespread participation.</p>
-<p><strong>Our Approach</strong></p>
+<h2 id="our-approach">Our Approach</h2>
 <p>To ensure all contributors can engage effectively and securely, we implemented several key practices:</p>
 <ul>
 <li><strong>Checkstyle</strong>: This tool enforces consistent coding standards, making it easier for new contributors to understand and contribute to the codebase.</li>
 <li><strong>ArchUnit</strong>: ArchUnit ensures we follow architectural guidelines, keeping our system robust and scalable as new features are added.</li>
 <li><strong>JaCoCo</strong>: We use JaCoCo for code coverage analysis to ensure our codebase is thoroughly tested, aiming for 100% coverage to minimize bugs.</li>
 </ul>
-<p><strong>The Challenge</strong></p>
+<h2 id="the-challenge">The Challenge</h2>
 <p>Despite following these CI/CD practices, we encountered an issue they couldn’t solve: technical debt from outdated dependencies and frameworks.</p>
 <p>Our application, originally developed with Spring Boot 2, went through many changes. However, developers found it difficult to keep the codebase up-to-date with new versions. Many were not concerned with upgrades, leading to significant technical debt—a daunting challenge.</p>
 <p>Think about it like this: When your phone gets a new Android update, you usually upgrade without hesitation. But in software development, developers often look for reasons not to upgrade, citing potential disruptions or the effort involved.</p>
 <p>The core issue is that developers only upgrade when necessary. Regular and proactive updates are crucial to maintaining a healthy, secure, and efficient codebase.</p>
-<p><strong>Our Solution</strong></p>
+<h2 id="our-solution">Our Solution</h2>
 <p>To address technical debt and keep our codebase up-to-date, we implemented these steps:</p>
 <ol>
 <li>
