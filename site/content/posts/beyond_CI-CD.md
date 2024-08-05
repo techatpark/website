@@ -1,6 +1,6 @@
 ---
 title: "Exploring the Next Frontier : Beyond CI/CD"
-weight: 7
+weight: 8
 authors:
   - vijaywhat
 ---
