@@ -100,62 +100,44 @@
     <div class="row w-100 h-100" id="main-container">
       
 
-<h1></h1>
-
-
-
-
-
-<h2>Articles</h2>
-
-  <article>
-  <h3><a href="/posts/sjson/" class="block-link">Introducing SJSON: A Tailor-Made and Hackable JSON Parser for Optimized API Development</a></h3>
-  <p>
-    During a casual discussion at the Bangalore Java User Group, the topic of JSON parsers sparked a debate on their pros and cons. This led to the inception of an innovative idea – creating yet another …
-    <a href="/posts/sjson/">Read more</a>
-  </p>
-  <p class="byline">
-    by 
-  
-  <a href="/authors/vijaywhat">VIJAYWHAT</a>
-
-
-  </p>
-</article>
-
-
-  <article>
-  <h3><a href="/posts/security-data-at-rest/" class="block-link">Basics of Cybersecurity - Data At Rest</a></h3>
-  <p>
-    When it comes to protecting confidential information, we find that clients require different approaches or pose different protection needs. Some clients need to protect the information on their mobile …
-    <a href="/posts/security-data-at-rest/">Read more</a>
-  </p>
-  <p class="byline">
-    by 
+<article>
+  <header>
+    <h1>Exploring the Next Frontier : Beyond CI/CD</h1>
+    <p>by 
   
   <a href="/authors/vijaywhat">vijaywhat</a>
 
+</p>
+    
+  </header>
 
-  </p>
+  <p>In the world of online education for rural government school students, accessibility and quality are vital. Gurukulams.com is an online learning portal that provides affordable and effective education, driven by the dedication of our community. Built by students for students, 80% of our contributors have little to no prior experience in software development. This requires a codebase that is both simple and secure to encourage widespread participation.</p>
+<p><strong>Our Approach</strong></p>
+<p>To ensure all contributors can engage effectively and securely, we implemented several key practices:</p>
+<ul>
+<li><strong>Checkstyle</strong>: This tool enforces consistent coding standards, making it easier for new contributors to understand and contribute to the codebase.</li>
+<li><strong>ArchUnit</strong>: ArchUnit ensures we follow architectural guidelines, keeping our system robust and scalable as new features are added.</li>
+<li><strong>JaCoCo</strong>: We use JaCoCo for code coverage analysis to ensure our codebase is thoroughly tested, aiming for 100% coverage to minimize bugs.</li>
+</ul>
+<p><strong>The Challenge</strong></p>
+<p>Despite following these CI/CD practices, we encountered an issue they couldn’t solve: technical debt from outdated dependencies and frameworks.</p>
+<p>Our application, originally developed with Spring Boot 2, went through many changes. However, developers found it difficult to keep the codebase up-to-date with new versions. Many were not concerned with upgrades, leading to significant technical debt—a daunting challenge.</p>
+<p>Think about it like this: When your phone gets a new Android update, you usually upgrade without hesitation. But in software development, developers often look for reasons not to upgrade, citing potential disruptions or the effort involved.</p>
+<p>The core issue is that developers only upgrade when necessary. Regular and proactive updates are crucial to maintaining a healthy, secure, and efficient codebase.</p>
+<p><strong>Our Solution</strong></p>
+<p>To address technical debt and keep our codebase up-to-date, we implemented these steps:</p>
+<ol>
+<li>
+<p><strong>Automated Dependency Updates</strong>: We use the Maven Versions plugin with its &ldquo;Upgrade&rdquo; goal. It checks for the latest versions of our dependencies. If it finds updates, it creates a backup file named <code>pom.xml.bak</code> and updates the <code>pom.xml</code> file with the new versions.</p>
+</li>
+<li>
+<p><strong>Build Failure on Pending Upgrades</strong>: To enforce these updates, we use the Maven Enforcer plugin. It checks for the existence of the <code>pom.xml.bak</code> file. If this file is found, indicating pending upgrades, the build will fail. This ensures updates are addressed promptly.</p>
+</li>
+</ol>
+<p>To manage exceptions and allow specific dependencies to be excluded from upgrades when necessary, we can configure exclusions. This flexibility ensures critical or incompatible updates can be managed without stopping the entire upgrade process.</p>
+<p>By taking these steps, we ensure our codebase stays current and secure, preventing technical debt from becoming a barrier to progress.</p>
+
 </article>
-
-
-  <article>
-  <h3><a href="/posts/beyond_ci-cd/" class="block-link">Exploring the Next Frontier : Beyond CI/CD</a></h3>
-  <p>
-    In the world of online education for rural government school students, accessibility and quality are vital. Gurukulams.com is an online learning portal that provides affordable and effective …
-    <a href="/posts/beyond_ci-cd/">Read more</a>
-  </p>
-  <p class="byline">
-    by 
-  
-  <a href="/authors/vijaywhat">vijaywhat</a>
-
-
-  </p>
-</article>
-
-
 
 
     </div>
