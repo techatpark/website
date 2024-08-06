@@ -2,7 +2,7 @@
 title: "Introducing SJSON: A Tailor-Made and Hackable JSON Parser for Optimized API Development"
 weight: 2
 authors:
-  - VIJAYWHAT
+  - vijaywhat
 tags:
   - JSON, Java
 authorimage: 'https://avatars.githubusercontent.com/u/89501520?v=4'
