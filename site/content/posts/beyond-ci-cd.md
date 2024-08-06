@@ -15,6 +15,8 @@ To ensure all contributors can engage effectively and securely, we implemented s
 - Ensure we follow **architectural guidelines**, keeping our system robust and scalable as new features are added. (**ArchUnit**)
 - Ensure our **codebase is thoroughly tested**, aiming for **100% coverage** to minimize bugs. (**JaCoCo**)
 
+with all this we expected that we have happy ending. but wait :). we were in for a surprise with an unexpected challenge.
+
 ## The Challenge
 
 Despite following these CI/CD practices, we encountered an issue they couldn’t solve: technical debt from old version of dependencies and frameworks.
