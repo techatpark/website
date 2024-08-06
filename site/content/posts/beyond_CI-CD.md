@@ -11,13 +11,13 @@ In the world of online education for rural government school students, accessibi
 
 To ensure all contributors can engage effectively and securely, we implemented several key practices:
 
-- **Checkstyle**: This tool enforces consistent coding standards, making it easier for new contributors to understand and contribute to the codebase.
-- **ArchUnit**: ArchUnit ensures we follow architectural guidelines, keeping our system robust and scalable as new features are added.
-- **JaCoCo**: We use JaCoCo for code coverage analysis to ensure our codebase is thoroughly tested, aiming for 100% coverage to minimize bugs.
+- Enforce consistent coding standards, making it easier for new contributors to understand and contribute to the codebase. (**Checkstyle**)
+- Ensure we follow architectural guidelines, keeping our system robust and scalable as new features are added. (**ArchUnit**)
+- Ensure our codebase is thoroughly tested, aiming for 100% coverage to minimize bugs. (**JaCoCo**)
 
 ## The Challenge
 
-Despite following these CI/CD practices, we encountered an issue they couldn’t solve: technical debt from outdated dependencies and frameworks.
+Despite following these CI/CD practices, we encountered an issue they couldn’t solve: technical debt from old version of dependencies and frameworks.
 
 Our application, originally developed with Spring Boot 2, went through many changes. However, developers found it difficult to keep the codebase up-to-date with new versions. Many were not concerned with upgrades, leading to significant technical debt—a daunting challenge.
 
@@ -35,4 +35,26 @@ To address technical debt and keep our codebase up-to-date, we implemented these
 
 To manage exceptions and allow specific dependencies to be excluded from upgrades when necessary, we can configure exclusions. This flexibility ensures critical or incompatible updates can be managed without stopping the entire upgrade process.
 
+## Our Learnings
+
+Maven Coordinate changes are not handled
+
 By taking these steps, we ensure our codebase stays current and secure, preventing technical debt from becoming a barrier to progress.
+
+## Q & A
+1. **Typical question from Product/business people** - When my application is working why do i need to upgrade to the latest version of technologies/libraries
+    
+    **Ans**: Business functionalities might work. Where as upgrades can help you with 
+   * Fixing security vulnerabilities
+   * Performance improvements
+   * Cost effectiveness (continues upgrade will cost lesser than the big upgrades)
+   * No or minimal tech-debt
+
+2. **Doesn't these upgrades incur time and effort (cost) ?**
+    **Ans** Yes. It will be minimal if we do continues upgrades vs bigger upgrades 
+    * Bigger upgrades Looks like mountains. Climbing a mountain in one shot is challenging. Similarly, if we do a bigger upgrades, we need to spend lot of time and money.
+    * Frequent upgrades are the steps to teach the mountain. If we are doing continues upgrade reaching mountain is easy.  Little bit extra effort and cost will be enough
+
+
+
+
