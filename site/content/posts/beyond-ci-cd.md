@@ -7,7 +7,7 @@ authors:
 
 [Gurukulams](https://gurukulams.com/) is an online learning portal that provides affordable and effective education platform, developed by students for students, 80% of our contributions come from people with little to no prior experience in software development. This **requires a codebase that is both simple and secure** to encourage widespread participation.
 
-## Our Approach
+## Traditional CI/CD
 
 To ensure all contributors can engage effectively and securely, we implemented several key practices:
 
@@ -25,9 +25,9 @@ Consider that, you receive a new Android update on your phone, you typically upg
 
 The core issue is that developers tend to upgrade only when absolutely necessary. In contrast, regular and proactive updates are essential for maintaining a healthy, secure, and efficient codebase. 
 
-> 💡 Shouldn’t the approach be the opposite, i.e we upgrade by defauly and seek reasons/excuses (only) if we don't ?
+> 💡 Shouldn’t the approach be the opposite, i.e we upgrade by default and seek reasons/excuses (only) if we don't ?
 
-## Our Solution
+## Our Approach
 
 To address technical debt and keep our codebase up-to-date, we implemented these steps:
 
