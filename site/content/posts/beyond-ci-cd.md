@@ -5,7 +5,7 @@ authors:
   - vijaywhat
 ---
 
-In the world of online education for rural government school students, accessibility and quality are vital. [Gurukulams](https://gurukulams.com/) is an online learning portal that provides affordable and effective education, driven by the dedication of our community. Built by students for students, 80% of our contributors have little to no prior experience in software development. This requires a codebase that is both simple and secure to encourage widespread participation.
+[Gurukulams](https://gurukulams.com/) is an online learning portal that provides affordable and effective education platform, developed by students for students, 80% of our contributions come from people with little to no prior experience in software development. This requires a codebase that is both simple and secure to encourage widespread participation.
 
 ## Our Approach
 
