@@ -29,15 +29,21 @@ The core issue is that developers only upgrade when necessary. Regular and proac
 
 To address technical debt and keep our codebase up-to-date, we implemented these steps:
 
-1. **Automated Dependency Updates**: We use the Maven Versions plugin with its "Upgrade" goal. It checks for the latest versions of our dependencies. If it finds updates, it creates a backup file named `pom.xml.bak` and updates the `pom.xml` file with the new versions.
+1. **Automated Dependency Updates**: We use the [Maven Versions](https://www.mojohaus.org/versions/versions-maven-plugin/index.html) plugin with its "Upgrade" goal. It checks for the latest versions of our dependencies. If it finds updates, it creates a backup file named `pom.xml.versionsBackup` and updates the `pom.xml` file with the new versions.
+
+```sh
+mvn versions:update-parent versions:update-properties
+```
   
-2. **Build Failure on Pending Upgrades**: To enforce these updates, we use the Maven Enforcer plugin. It checks for the existence of the `pom.xml.bak` file. If this file is found, indicating pending upgrades, the build will fail. This ensures updates are addressed promptly.
+2. **Build Failure on Pending Upgrades**: To enforce these updates, we use the [Maven Enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/usage.html) plugin. It checks for the existence of the `pom.xml.versionsBackup` file. If this file is found, indicating pending upgrades, the build will fail. This ensures updates are addressed promptly.
 
-To manage exceptions and allow specific dependencies to be excluded from upgrades when necessary, we can configure exclusions. This flexibility ensures critical or incompatible updates can be managed without stopping the entire upgrade process.
+```sh
+mvn clean package
+```
 
-## Our Learnings
+3. **To manage exceptions**: Allow specific dependencies to be excluded from upgrades when necessary, we can configure exclusions. This flexibility ensures critical or incompatible updates can be managed without stopping the entire upgrade process.
 
-Maven Coordinate changes are not handled
+## Lessons Learned
 
 By taking these steps, we ensure our codebase stays current and secure, preventing technical debt from becoming a barrier to progress.
 
@@ -54,6 +60,10 @@ By taking these steps, we ensure our codebase stays current and secure, preventi
     **Ans** Yes. It will be minimal if we do continues upgrades vs bigger upgrades 
     * Bigger upgrades Looks like mountains. Climbing a mountain in one shot is challenging. Similarly, if we do a bigger upgrades, we need to spend lot of time and money.
     * Frequent upgrades are the steps to teach the mountain. If we are doing continues upgrade reaching mountain is easy.  Little bit extra effort and cost will be enough
+
+3. **Known Limitations**
+    1. Maven Coordinate changes are not handled
+   
 
 
 
