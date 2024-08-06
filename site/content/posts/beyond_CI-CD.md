@@ -21,9 +21,9 @@ Despite following these CI/CD practices, we encountered an issue they couldn’t
 
 Our application, originally developed with Spring Boot 2, went through many changes. However, developers found it difficult to keep the codebase up-to-date with new versions. Many were not concerned with upgrades, leading to significant technical debt—a daunting challenge.
 
-Think about it like this: When your phone gets a new Android update, you usually upgrade without hesitation. But in software development, developers often look for reasons not to upgrade, citing potential disruptions or the effort involved.
+Consider that, you receive a new Android update on your phone, you typically upgrade without hesitation, understanding the benefits it brings and the potential issues it fixes. However, in software development, the mindset often shifts. Developers frequently question why they should upgrade, focusing on potential disruptions or the effort required, rather than proactively seeking improvements.
 
-The core issue is that developers only upgrade when necessary. Regular and proactive updates are crucial to maintaining a healthy, secure, and efficient codebase.
+The core issue is that developers tend to upgrade only when absolutely necessary. In contrast, regular and proactive updates are essential for maintaining a healthy, secure, and efficient codebase. Shouldn’t the approach be the opposite, where we seek reasons to upgrade rather than reasons to delay?
 
 ## Our Solution
 
