@@ -146,7 +146,7 @@ Log data contains information such as out of memory exception or hard disk error
       
       <guid>/posts/beyond-ci-cd/</guid>
       <description>Gurukulams is an online learning portal that provides affordable and effective education platform, developed by students for students, 80% of our contributions come from people with little to no prior experience in software development. This requires a codebase that is both simple and secure to encourage widespread participation.
-Our Approach To ensure all contributors can engage effectively and securely, we implemented several key practices:
+Traditional CI/CD To ensure all contributors can engage effectively and securely, we implemented several key practices:
 Enforce consistent coding standards, making it easier for new contributors to understand and contribute to the codebase.</description>
     </item>
     

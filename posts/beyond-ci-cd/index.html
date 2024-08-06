@@ -112,7 +112,7 @@
   </header>
 
   <p><a href="https://gurukulams.com/">Gurukulams</a> is an online learning portal that provides affordable and effective education platform, developed by students for students, 80% of our contributions come from people with little to no prior experience in software development. This <strong>requires a codebase that is both simple and secure</strong> to encourage widespread participation.</p>
-<h2 id="our-approach">Our Approach</h2>
+<h2 id="traditional-cicd">Traditional CI/CD</h2>
 <p>To ensure all contributors can engage effectively and securely, we implemented several key practices:</p>
 <ul>
 <li>Enforce consistent <strong>coding standards</strong>, making it easier for new contributors to understand and contribute to the codebase. (<strong>Checkstyle</strong>)</li>
@@ -127,9 +127,9 @@
 <p>Consider that, you receive a new Android update on your phone, you typically upgrade without hesitation, understanding the benefits it brings and the potential issues it fixes. However, in software development, the mindset often shifts. Developers frequently question why they should upgrade, focusing on potential disruptions or the effort required, rather than proactively seeking improvements.</p>
 <p>The core issue is that developers tend to upgrade only when absolutely necessary. In contrast, regular and proactive updates are essential for maintaining a healthy, secure, and efficient codebase.</p>
 <blockquote>
-<p>💡 Shouldn’t the approach be the opposite, i.e we upgrade by defauly and seek reasons/excuses (only) if we don&rsquo;t ?</p>
+<p>💡 Shouldn’t the approach be the opposite, i.e we upgrade by default and seek reasons/excuses (only) if we don&rsquo;t ?</p>
 </blockquote>
-<h2 id="our-solution">Our Solution</h2>
+<h2 id="our-approach">Our Approach</h2>
 <p>To address technical debt and keep our codebase up-to-date, we implemented these steps:</p>
 <ol>
 <li><strong>Automated Dependency Updates</strong>: We use the <a href="https://www.mojohaus.org/versions/versions-maven-plugin/index.html">Maven Versions</a> plugin with its &ldquo;Upgrade&rdquo; goal. It checks for the latest versions of our dependencies. If it finds updates, it creates a backup file named <code>pom.xml.versionsBackup</code> and updates the <code>pom.xml</code> file with the new versions.</li>
