@@ -127,16 +127,17 @@
 <h2 id="our-solution">Our Solution</h2>
 <p>To address technical debt and keep our codebase up-to-date, we implemented these steps:</p>
 <ol>
-<li>
-<p><strong>Automated Dependency Updates</strong>: We use the Maven Versions plugin with its &ldquo;Upgrade&rdquo; goal. It checks for the latest versions of our dependencies. If it finds updates, it creates a backup file named <code>pom.xml.bak</code> and updates the <code>pom.xml</code> file with the new versions.</p>
-</li>
-<li>
-<p><strong>Build Failure on Pending Upgrades</strong>: To enforce these updates, we use the Maven Enforcer plugin. It checks for the existence of the <code>pom.xml.bak</code> file. If this file is found, indicating pending upgrades, the build will fail. This ensures updates are addressed promptly.</p>
-</li>
+<li><strong>Automated Dependency Updates</strong>: We use the <a href="https://www.mojohaus.org/versions/versions-maven-plugin/index.html">Maven Versions</a> plugin with its &ldquo;Upgrade&rdquo; goal. It checks for the latest versions of our dependencies. If it finds updates, it creates a backup file named <code>pom.xml.versionsBackup</code> and updates the <code>pom.xml</code> file with the new versions.</li>
 </ol>
-<p>To manage exceptions and allow specific dependencies to be excluded from upgrades when necessary, we can configure exclusions. This flexibility ensures critical or incompatible updates can be managed without stopping the entire upgrade process.</p>
-<h2 id="our-learnings">Our Learnings</h2>
-<p>Maven Coordinate changes are not handled</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>mvn versions:update-parent versions:update-properties
+</span></span></code></pre></div><ol start="2">
+<li><strong>Build Failure on Pending Upgrades</strong>: To enforce these updates, we use the <a href="https://maven.apache.org/enforcer/maven-enforcer-plugin/usage.html">Maven Enforcer</a> plugin. It checks for the existence of the <code>pom.xml.versionsBackup</code> file. If this file is found, indicating pending upgrades, the build will fail. This ensures updates are addressed promptly.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>mvn clean package
+</span></span></code></pre></div><ol start="3">
+<li><strong>To manage exceptions</strong>: Allow specific dependencies to be excluded from upgrades when necessary, we can configure exclusions. This flexibility ensures critical or incompatible updates can be managed without stopping the entire upgrade process.</li>
+</ol>
+<h2 id="lessons-learned">Lessons Learned</h2>
 <p>By taking these steps, we ensure our codebase stays current and secure, preventing technical debt from becoming a barrier to progress.</p>
 <h2 id="q--a">Q &amp; A</h2>
 <ol>
@@ -157,6 +158,12 @@
 <li>Bigger upgrades Looks like mountains. Climbing a mountain in one shot is challenging. Similarly, if we do a bigger upgrades, we need to spend lot of time and money.</li>
 <li>Frequent upgrades are the steps to teach the mountain. If we are doing continues upgrade reaching mountain is easy.  Little bit extra effort and cost will be enough</li>
 </ul>
+</li>
+<li>
+<p><strong>Known Limitations</strong></p>
+<ol>
+<li>Maven Coordinate changes are not handled</li>
+</ol>
 </li>
 </ol>
 
