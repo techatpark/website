@@ -45,26 +45,25 @@ mvn clean package
 
 ## Lessons Learned
 
-By taking these steps, we ensure our codebase stays current and secure, preventing technical debt from becoming a barrier to progress.
+By taking these steps, we ensure our codebase stays current and secure, preventing technical debt from becoming a barrier to progress. However, this approach is not without its challenges and resistance.
 
-## Q & A
-1. **Typical question from Product/business people** - When my application is working why do i need to upgrade to the latest version of technologies/libraries
-    
-    **Ans**: Business functionalities might work. Where as upgrades can help you with 
-   * Fixing security vulnerabilities
-   * Performance improvements
-   * Cost effectiveness (continues upgrade will cost lesser than the big upgrades)
-   * No or minimal tech-debt
+1. **Typical question from Product/business people**: "When my application is working, why do I need to upgrade to the latest version of technologies/libraries?"
+   
+   **Answer**: Business functionalities might work, but upgrades offer:
+   - Fixing security vulnerabilities
+   - Performance improvements
+   - Cost effectiveness (continuous upgrades cost less than big upgrades)
+   - Minimal tech debt
 
-2. **Doesn't these upgrades incur time and effort (cost) ?**
-    **Ans** Yes. It will be minimal if we do continues upgrades vs bigger upgrades 
-    * Bigger upgrades Looks like mountains. Climbing a mountain in one shot is challenging. Similarly, if we do a bigger upgrades, we need to spend lot of time and money.
-    * Frequent upgrades are the steps to teach the mountain. If we are doing continues upgrade reaching mountain is easy.  Little bit extra effort and cost will be enough
+2. **Doesn't these upgrades incur time and effort (cost)?**
+   
+   **Answer**: Yes, but the cost is minimal with continuous upgrades compared to bigger upgrades.
+   - Bigger upgrades are like mountains. Climbing a mountain in one shot is challenging. Similarly, big upgrades require significant time and money.
+   - Frequent upgrades are like steps up the mountain. Regular upgrades make reaching the summit easier, with only a little extra effort and cost needed.
 
 3. **Known Limitations**
-    1. Maven Coordinate changes are not handled
-   2. Created developer ambiguity. Work in progress to find the diff and communicate to the developer
-   
+   - Maven coordinate changes are not handled.
+   - Created developer ambiguity. Work is in progress to find the differences and communicate them to developers.
 
 
 
