@@ -11,9 +11,9 @@ authors:
 
 To ensure all contributors can engage effectively and securely, we implemented several key practices:
 
-- Enforce consistent coding standards, making it easier for new contributors to understand and contribute to the codebase. (**Checkstyle**)
-- Ensure we follow architectural guidelines, keeping our system robust and scalable as new features are added. (**ArchUnit**)
-- Ensure our codebase is thoroughly tested, aiming for 100% coverage to minimize bugs. (**JaCoCo**)
+- Enforce consistent **coding standards**, making it easier for new contributors to understand and contribute to the codebase. (**Checkstyle**)
+- Ensure we follow **architectural guidelines**, keeping our system robust and scalable as new features are added. (**ArchUnit**)
+- Ensure our **codebase is thoroughly tested**, aiming for **100% coverage** to minimize bugs. (**JaCoCo**)
 
 ## The Challenge
 
