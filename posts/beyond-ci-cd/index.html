@@ -111,7 +111,7 @@
     
   </header>
 
-  <p><a href="https://gurukulams.com/">Gurukulams</a> is an online learning portal that provides affordable and effective education platform, developed by students for students, 80% of our contributions come from people with little to no prior experience in software development. This requires a codebase that is both simple and secure to encourage widespread participation.</p>
+  <p><a href="https://gurukulams.com/">Gurukulams</a> is an online learning portal that provides affordable and effective education platform, developed by students for students, 80% of our contributions come from people with little to no prior experience in software development. This <strong>requires a codebase that is both simple and secure</strong> to encourage widespread participation.</p>
 <h2 id="our-approach">Our Approach</h2>
 <p>To ensure all contributors can engage effectively and securely, we implemented several key practices:</p>
 <ul>
@@ -119,12 +119,16 @@
 <li>Ensure we follow <strong>architectural guidelines</strong>, keeping our system robust and scalable as new features are added. (<strong>ArchUnit</strong>)</li>
 <li>Ensure our <strong>codebase is thoroughly tested</strong>, aiming for <strong>100% coverage</strong> to minimize bugs. (<strong>JaCoCo</strong>)</li>
 </ul>
-<p>with all this we expected that we have happy ending. but wait :). we were in for a surprise with an unexpected challenge.</p>
+<p>Despite following these CI/CD practices, we encountered <strong>challenge due technical debt from old version of dependencies</strong> and frameworks.</p>
 <h2 id="the-challenge">The Challenge</h2>
-<p>Despite following these CI/CD practices, we encountered an issue they couldn’t solve: technical debt from old version of dependencies and frameworks.</p>
-<p>Our application, originally developed with Spring Boot 2, went through many changes. However, developers found it difficult to keep the codebase up-to-date with new versions. Many were not concerned with upgrades, leading to significant technical debt—a daunting challenge.</p>
+<blockquote>
+<p>Our application, originally developed with <strong>Spring Boot 2</strong>, went through many changes. However, developers found it <strong>difficult to keep the codebase up-to-date with new versions</strong>. Many were not concerned with upgrades, leading to significant technical debt—a daunting challenge.</p>
+</blockquote>
 <p>Consider that, you receive a new Android update on your phone, you typically upgrade without hesitation, understanding the benefits it brings and the potential issues it fixes. However, in software development, the mindset often shifts. Developers frequently question why they should upgrade, focusing on potential disruptions or the effort required, rather than proactively seeking improvements.</p>
-<p>The core issue is that developers tend to upgrade only when absolutely necessary. In contrast, regular and proactive updates are essential for maintaining a healthy, secure, and efficient codebase. Shouldn’t the approach be the opposite, where we seek reasons to upgrade rather than reasons to delay?</p>
+<p>The core issue is that developers tend to upgrade only when absolutely necessary. In contrast, regular and proactive updates are essential for maintaining a healthy, secure, and efficient codebase.</p>
+<blockquote>
+<p>💡 Shouldn’t the approach be the opposite, i.e we upgrade by defauly and seek reasons/excuses (only) if we don&rsquo;t ?</p>
+</blockquote>
 <h2 id="our-solution">Our Solution</h2>
 <p>To address technical debt and keep our codebase up-to-date, we implemented these steps:</p>
 <ol>
@@ -138,7 +142,7 @@
 </span></span></code></pre></div><ol start="3">
 <li><strong>To manage exceptions</strong>: Allow specific dependencies to be excluded from upgrades when necessary, we can configure exclusions. This flexibility ensures critical or incompatible updates can be managed without stopping the entire upgrade process.</li>
 </ol>
-<h2 id="lessons-learned">Lessons Learned</h2>
+<h2 id="faq">FAQ</h2>
 <p>By taking these steps, we ensure our codebase stays current and secure, preventing technical debt from becoming a barrier to progress. However, this approach is not without its challenges and resistance.</p>
 <ol>
 <li>
@@ -162,7 +166,7 @@
 <li>
 <p><strong>Known Limitations</strong></p>
 <ul>
-<li>Maven coordinate changes are not handled.</li>
+<li><a href="https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt">Maven coordinate changes</a> are not handled.</li>
 <li>Created developer ambiguity. Work is in progress to find the differences and communicate them to developers.</li>
 </ul>
 </li>
