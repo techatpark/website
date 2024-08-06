@@ -63,6 +63,7 @@ By taking these steps, we ensure our codebase stays current and secure, preventi
 
 3. **Known Limitations**
     1. Maven Coordinate changes are not handled
+   2. Created developer ambiguity. Work in progress to find the diff and communicate to the developer
    
 
 
