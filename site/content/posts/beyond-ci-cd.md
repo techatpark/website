@@ -5,7 +5,7 @@ authors:
   - vijaywhat
 ---
 
-[Gurukulams](https://gurukulams.com/) is an online learning portal that provides affordable and effective education platform, developed by students for students, 80% of our contributions come from people with little to no prior experience in software development. This requires a codebase that is both simple and secure to encourage widespread participation.
+[Gurukulams](https://gurukulams.com/) is an online learning portal that provides affordable and effective education platform, developed by students for students, 80% of our contributions come from people with little to no prior experience in software development. This **requires a codebase that is both simple and secure** to encourage widespread participation.
 
 ## Our Approach
 
@@ -15,17 +15,17 @@ To ensure all contributors can engage effectively and securely, we implemented s
 - Ensure we follow **architectural guidelines**, keeping our system robust and scalable as new features are added. (**ArchUnit**)
 - Ensure our **codebase is thoroughly tested**, aiming for **100% coverage** to minimize bugs. (**JaCoCo**)
 
-with all this we expected that we have happy ending. but wait :). we were in for a surprise with an unexpected challenge.
+Despite following these CI/CD practices, we encountered **challenge due technical debt from old version of dependencies** and frameworks.
 
 ## The Challenge
 
-Despite following these CI/CD practices, we encountered an issue they couldn’t solve: technical debt from old version of dependencies and frameworks.
-
-Our application, originally developed with Spring Boot 2, went through many changes. However, developers found it difficult to keep the codebase up-to-date with new versions. Many were not concerned with upgrades, leading to significant technical debt—a daunting challenge.
+> Our application, originally developed with **Spring Boot 2**, went through many changes. However, developers found it **difficult to keep the codebase up-to-date with new versions**. Many were not concerned with upgrades, leading to significant technical debt—a daunting challenge.
 
 Consider that, you receive a new Android update on your phone, you typically upgrade without hesitation, understanding the benefits it brings and the potential issues it fixes. However, in software development, the mindset often shifts. Developers frequently question why they should upgrade, focusing on potential disruptions or the effort required, rather than proactively seeking improvements.
 
-The core issue is that developers tend to upgrade only when absolutely necessary. In contrast, regular and proactive updates are essential for maintaining a healthy, secure, and efficient codebase. Shouldn’t the approach be the opposite, where we seek reasons to upgrade rather than reasons to delay?
+The core issue is that developers tend to upgrade only when absolutely necessary. In contrast, regular and proactive updates are essential for maintaining a healthy, secure, and efficient codebase. 
+
+> 💡 Shouldn’t the approach be the opposite, i.e we upgrade by defauly and seek reasons/excuses (only) if we don't ?
 
 ## Our Solution
 
@@ -45,7 +45,7 @@ mvn clean package
 
 3. **To manage exceptions**: Allow specific dependencies to be excluded from upgrades when necessary, we can configure exclusions. This flexibility ensures critical or incompatible updates can be managed without stopping the entire upgrade process.
 
-## Lessons Learned
+## FAQ
 
 By taking these steps, we ensure our codebase stays current and secure, preventing technical debt from becoming a barrier to progress. However, this approach is not without its challenges and resistance.
 
@@ -64,7 +64,7 @@ By taking these steps, we ensure our codebase stays current and secure, preventi
    - Frequent upgrades are like steps up the mountain. Regular upgrades make reaching the summit easier, with only a little extra effort and cost needed.
 
 3. **Known Limitations**
-   - Maven coordinate changes are not handled.
+   - [Maven coordinate changes](https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt) are not handled.
    - Created developer ambiguity. Work is in progress to find the differences and communicate them to developers.
 
 
