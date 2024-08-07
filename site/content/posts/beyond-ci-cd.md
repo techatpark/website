@@ -63,10 +63,11 @@ By taking these steps, we ensure our codebase stays current and secure, preventi
    - Bigger upgrades are like mountains. Climbing a mountain in one shot is challenging. Similarly, big upgrades require significant time and money.
    - Frequent upgrades are like steps up the mountain. Regular upgrades make reaching the summit easier, with only a little extra effort and cost needed.
 
-3. **Known Limitations**
+3. **Is this possible to do without proper automation?**
+
+   **Answer**: No. Considering this can cause side effects, we should only proceed when thorough testing is possible (either automated or manual). In fact, without proper automation, this approach can backfire heavily.
+
+4. **Known Limitations**
    - [Maven coordinate changes](https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt) are not handled.
    - Created developer ambiguity. Work is in progress to find the differences and communicate them to developers.
-
-
-
 
