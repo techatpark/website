@@ -31,19 +31,19 @@ The core issue is that developers tend to upgrade only when absolutely necessary
 
 To address technical debt and keep our codebase up-to-date, we implemented these steps:
 
-1. **Automated Dependency Updates**: We use the [Maven Versions](https://www.mojohaus.org/versions/versions-maven-plugin/index.html) plugin with its "Upgrade" goal. It checks for the latest versions of our dependencies. If it finds updates, it creates a backup file named `pom.xml.versionsBackup` and updates the `pom.xml` file with the new versions.
+1. **Detect Version Upgrades**: We use the [Maven Versions](https://www.mojohaus.org/versions/versions-maven-plugin/index.html) plugin with its "update-*" goals. It checks for the latest versions of our dependencies. If it finds updates, it creates a backup file named `pom.xml.versionsBackup` and updates the `pom.xml` file with the new versions.
 
 ```sh
 mvn versions:update-parent versions:update-properties
 ```
   
-2. **Build Failure on Pending Upgrades**: To enforce these updates, we use the [Maven Enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/usage.html) plugin. It checks for the existence of the `pom.xml.versionsBackup` file. If this file is found, indicating pending upgrades, the build will fail. This ensures updates are addressed promptly.
+2. **Enforce Build Failure**: [Maven Enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/usage.html) plugin checks for the existence of the `pom.xml.versionsBackup` file. If this file is found, indicating pending upgrades, the build will fail. This ensures updates are addressed promptly.
 
 ```sh
 mvn clean package
 ```
 
-3. **To manage exceptions**: Allow specific dependencies to be excluded from upgrades when necessary, we can configure exclusions. This flexibility ensures critical or incompatible updates can be managed without stopping the entire upgrade process.
+3. **Exclude exceptions**: Allow specific dependencies to be excluded from upgrades when necessary, we can configure exclusions. This flexibility ensures critical or incompatible updates can be managed without stopping the entire upgrade process.
 
 ## FAQ
 
