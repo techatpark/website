@@ -49,6 +49,13 @@ mvn clean package
 
 By taking these steps, we ensure our codebase stays current and secure, preventing technical debt from becoming a barrier to progress. However, this approach is not without its challenges and resistance.
 
+0. **Avoiding deprrecated API**: "On a long running project deprected apis are maj0r blockers for upgrades. We can resolve them by failing the build using the below maven configuration"
+```xml
+		<maven.compiler.showDeprecation>true</maven.compiler.showDeprecation>
+		<maven.compiler.failOnWarning>true</maven.compiler.failOnWarning>
+
+```
+
 1. **Typical question from Product/business people**: "When my application is working, why do I need to upgrade to the latest version of technologies/libraries?"
    
    **Answer**: Business functionalities might work, but upgrades offer:
