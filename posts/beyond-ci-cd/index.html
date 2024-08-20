@@ -144,7 +144,12 @@
 </ol>
 <h2 id="faq">FAQ</h2>
 <p>By taking these steps, we ensure our codebase stays current and secure, preventing technical debt from becoming a barrier to progress. However, this approach is not without its challenges and resistance.</p>
-<ol>
+<ol start="0">
+<li><strong>Avoiding deprrecated API</strong>: &ldquo;On a long running project deprected apis are maj0r blockers for upgrades. We can resolve them by failing the build using the below maven configuration&rdquo;</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span>		<span style="color:#f92672">&lt;maven.compiler.showDeprecation&gt;</span>true<span style="color:#f92672">&lt;/maven.compiler.showDeprecation&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;maven.compiler.failOnWarning&gt;</span>true<span style="color:#f92672">&lt;/maven.compiler.failOnWarning&gt;</span>
+</span></span></code></pre></div><ol>
 <li>
 <p><strong>Typical question from Product/business people</strong>: &ldquo;When my application is working, why do I need to upgrade to the latest version of technologies/libraries?&rdquo;</p>
 <p><strong>Answer</strong>: Business functionalities might work, but upgrades offer:</p>
