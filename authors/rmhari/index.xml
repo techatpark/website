@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TECHATPARK - BUILDING PRO-GRAMMERS !</title>
+    <link>/authors/rmhari/</link>
+    <description>Recent content on TECHATPARK - BUILDING PRO-GRAMMERS !</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/authors/rmhari/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Understanding Code Quality: Building Software that Works, and Works Well</title>
+      <link>/posts/code-quality-basics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/code-quality-basics/</guid>
+      <description>Introduction: When it comes to software development, there is a significant difference between working software and quality software. While the former focuses on achieving functional requirements and basic functionality, the latter encompasses a broader spectrum of factors that contribute to a software system&amp;rsquo;s overall excellence. Code quality plays a crucial role in determining the reliability, maintainability, and efficiency of software applications.
+Defining Code Quality: Code quality refers to the measure of how well a software system meets certain characteristics or attributes that contribute to its overall excellence.</description>
+    </item>
+    
+    <item>
+      <title>Logging in Java</title>
+      <link>/posts/logging-in-java/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/logging-in-java/</guid>
+      <description>Logging Greatness:
+For many years, logs have been an essential part of troubleshooting application and infrastructure performance. They help provide visibility into how our applications are running on each of the various infrastructure components.
+Log data contains information such as out of memory exception or hard disk errors. This is very helpful information that will help us identify the “why” behind a problem either that a user has brought to our attention or that we have uncovered.</description>
+    </item>
+    
+  </channel>
+</rss>

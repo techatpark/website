@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <base href="/">
+    <title>TECHATPARK - BUILDING PRO-GRAMMERS !</title>
+
+    
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/logo_full.svg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/logo_full.svg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/logo_full.svg"
+    />
+    <link rel="manifest" href="/images/site.webmanifest" />
+
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+    
+
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    
+
+       
+
+  
+
+
+</head>
+
+<body>
+  
+  
+  
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="/images/logo.svg" alt="" width="30" height="30" class="d-inline-block align-text-top">
+      TECH@PARK
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        
+        <li class="nav-item">
+          <a class="nav-link active" href="/our-method">Our Method</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/our-values">Our Values</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/our-achievements">Our Achievement</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/posts">Blog</a>
+        </li>
+        
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+ 
+
+  <main class="container-fluid w-100 h-100">
+    <div class="row w-100 h-100" id="main-container">
+      
+
+<article>
+  <header>
+    <h1>Microserices - Not a Binary Choice</h1>
+    <p>by 
+  
+  <a href="/authors/sathishk">sathishk</a>
+
+</p>
+    
+  </header>
+
+  <h3 id="chapter-1-the-great-debate-monoliths-vs-microservices">Chapter 1: The Great Debate: Monoliths vs. Microservices</h3>
+<p>As software engineers, we face numerous challenges on a daily basis. Perhaps your team is struggling to stay productive, your application isn&rsquo;t scalable enough, or your response times are sluggish. Or maybe you&rsquo;re simply having a hard time acing those job interviews. It can be overwhelming to tackle each problem individually, which is why many software gurus are promoting a single solution for all of these issues: microservices.</p>
+<p>But what exactly are microservices, and why is there so much pressure in the industry to adopt them? For starters, it seems like monoliths - the traditional way of building software - have become outdated and old-fashioned. Yet at the same time, many experts are now recommending a hybrid approach known as modular monoliths.</p>
+<p>Before we dive into the technical details, let&rsquo;s take a step back and explore the basics. What are monoliths and microservices, and how are they connected? By understanding the fundamental principles behind these two architectures, we can better appreciate the benefits and drawbacks of each. So let&rsquo;s get started!</p>
+<h3 id="chapter-2-a-cautionary-tale">Chapter 2: A Cautionary Tale</h3>
+<p>Meet Mr. Developer, a software engineer who was running a monolithic REST API application on a single Tomcat instance connected to MySQL. He had heard a lot of buzz about microservices and saw his competitors successfully adopting this architecture, so he decided to follow suit. Mr. Developer split his monolith into two microservices, each with its own database: MySQL and MongoDB.</p>
+<p>However, Mr. Developer quickly realized that the transition was not as smooth as he expected. He encountered a few problems that he hadn&rsquo;t anticipated:</p>
+<ol>
+<li><strong>Cloud cost:</strong> What was previously running on just two nodes (Tomcat and MySQL) now required at least six nodes, including an API gateway node, two services nodes, a MySQL server, a MongoDB server, and additional nodes for distributed logging and tracing.</li>
+<li><strong>Performance:</strong> Each REST call now needed to be encoded and decoded twice, resulting in additional processing time that slowed down the system.</li>
+<li><strong>Complexity:</strong> As he separated the services, his team also got split. Additionally, Mr. Developer needed to acquire new skills like MongoDB, distributed logging, and tracing, which resulted in additional complexity.</li>
+<li><strong>Lack of Standard</strong> Due to the lack of standard he has to rework on things that was not even in his coontrol. (E.g Open Feign Deprecation, Outdated Netflix Libraries)</li>
+</ol>
+<p>Mr. Developer found himself dealing with complexity, increased costs, and lower performing software. He couldn&rsquo;t help but wonder what had gone wrong in his transition from monolith to microservices.</p>
+<h3 id="chapter-3-monoliths-and-microservices-as-families">Chapter 3: Monoliths and Microservices as Families</h3>
+<h4 id="the-joint-family-monoliths">The Joint Family: Monoliths</h4>
+<p>In the context of software engineering, a monolith can be thought of as a joint family - a large and tightly-knit group of software components that work together to achieve a common goal.</p>
+<p>Just like in a joint family, all the services in a monolith are closely connected to one another, sharing resources and relying on each other for support. While this can lead to a strong sense of camaraderie and mutual aid, it can also result in conflicts and inefficiencies if not managed properly.</p>
+<h4 id="the-nuclear-family-microservices">The Nuclear Family: Microservices</h4>
+<p>On the other hand, microservices can be thought of as a nuclear family - a small and self-sufficient group of software components that work independently, but still share a common goal.</p>
+<p>Unlike a joint family, where resources are shared and communication is constant, each microservice operates in its own isolated environment. This allows for greater flexibility and autonomy, but can also lead to isolation and fragmentation if not properly managed.</p>
+<h4 id="choosing-the-right-family-monoliths-vs-microservices">Choosing the Right Family: Monoliths vs. Microservices</h4>
+<p>It&rsquo;s important to note that the choice between monoliths and microservices should be driven by the specific requirements of your software, not external factors like trends or what others are doing.</p>
+<p>If you choose to go with a monolith simply because it&rsquo;s the &ldquo;traditional&rdquo; approach, or because other companies in your industry are using it, you may end up paying a heavy price in terms of scalability, maintainability, and overall performance.</p>
+<p>Similarly, if you choose microservices without carefully considering the complexity of your system or the potential communication overhead between services, you may find yourself struggling to manage a fragmented and inefficient architecture.</p>
+<p>In short, the key to making the right choice is to carefully evaluate your software requirements and choose the architecture that best aligns with those needs. This may require some trial and error, but in the long run it will pay off in terms of better performance, greater scalability, and easier maintenance.</p>
+<h3 id="chapter-4-microservices-deconstructing-the-vada-pav">Chapter 4: Microservices: Deconstructing the Vada Pav</h3>
+<p>Let&rsquo;s take a closer look at microservices by comparing it to a popular Indian street food called Vada Pav. Just like the Vada Pav, microservices consist of several individual components that work together to create a cohesive end product.</p>
+<p><img src="/images/vadapav.png" alt="Vapav"></p>
+<ol>
+<li>The Bun serves as the platform to hold everything together, and it can be purchased from different vendors like Master Bakery or KR Bakery.</li>
+<li>The Masala Topping serves as the foundation layer and adds flavor to the dish.</li>
+<li>The Bonda and Chutney are made in-house by the Vadapav maker. Making the Bonda requires expertise in frying and the use of a frying pan, while making the Chutney requires knowledge of grinding and the use of a mixer.</li>
+</ol>
+<p>Similarly, Java-based microservices also have three main components:</p>
+<ol>
+<li>The Java Virtual Machine (JVM) serves as the platform and can be provided by different vendors like Oracle, Azul, or OpenJDK.</li>
+<li>Frameworks and tools, like Spring Boot or Quarkus, serve as the foundation layer and provide structure to the microservices.</li>
+<li>Building the Bonda Service may require expertise in Java, while building the Chutney Service may require knowledge of Python. Additionally, the tools used to build each service may differ as well. The Bonda Service may be built using Spring Boot, while the Chutney Service may be built using Django.</li>
+</ol>
+<p>In an ideal world of service-oriented development, these four components (JVM, frameworks and tools, our own services, and external services) should be flexible enough to be replaced, just like how one can replace the bun or masala topping in a Vada Pav.</p>
+<h3 id="conclusion">Conclusion</h3>
+<ol>
+<li>Monolith is not a bad approach if it works properly. In some cases, a monolithic architecture can be sufficient to meet the needs of the application and its users.</li>
+<li>It&rsquo;s generally not advisable to start a new project using a microservices architecture. This approach adds complexity and can be challenging to manage, especially for smaller teams.</li>
+<li>It&rsquo;s better to develop the application as a monolith first and then consider deploying it as microservices if necessary. This approach allows for easier testing, debugging, and development, while also allowing for easier deployment and scaling in the future.</li>
+</ol>
+
+</article>
+
+
+    </div>
+    
+  </main>
+
+  
+  <div class="fixed-bottom bg-transparent">
+  <small>Made with <i class="fas fa-heart"></i>
+    for the learning by students of <a class="text-decoration-none" href="http://www.techatpark.com" target="_techatpark">Tech@Park</a>
+  </small>
+</div>
+
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+
+
+
+
+  
+    
+
+  
+</body>
+
+</html>

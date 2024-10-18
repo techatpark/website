@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <base href="/">
+    <title>TECHATPARK - BUILDING PRO-GRAMMERS !</title>
+
+    
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/logo_full.svg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/logo_full.svg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/logo_full.svg"
+    />
+    <link rel="manifest" href="/images/site.webmanifest" />
+
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+    
+
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    
+
+       
+
+  
+
+
+</head>
+
+<body>
+  
+  
+  
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="/images/logo.svg" alt="" width="30" height="30" class="d-inline-block align-text-top">
+      TECH@PARK
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        
+        <li class="nav-item">
+          <a class="nav-link active" href="/our-method">Our Method</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/our-values">Our Values</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/our-achievements">Our Achievement</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/posts">Blog</a>
+        </li>
+        
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+ 
+
+  <main class="container-fluid w-100 h-100">
+    <div class="row w-100 h-100" id="main-container">
+      
+
+<article>
+  <header>
+    <h1>Exploring the Next Frontier : Beyond CI/CD</h1>
+    <p>by 
+  
+  <a href="/authors/vijaywhat">vijaywhat</a>
+
+</p>
+    
+  </header>
+
+  <p><a href="https://gurukulams.com/">Gurukulams</a> is an online learning portal that provides affordable and effective education platform, developed by students for students, 80% of our contributions come from people with little to no prior experience in software development. This <strong>requires a codebase that is both simple and secure</strong> to encourage widespread participation.</p>
+<h2 id="traditional-cicd">Traditional CI/CD</h2>
+<p>To ensure all contributors can engage effectively and securely, we implemented several key practices:</p>
+<ul>
+<li>Enforce consistent <strong>coding standards</strong>, making it easier for new contributors to understand and contribute to the codebase. (<strong>Checkstyle</strong>)</li>
+<li>Ensure we follow <strong>architectural guidelines</strong>, keeping our system robust and scalable as new features are added. (<strong>ArchUnit</strong>)</li>
+<li>Ensure our <strong>codebase is thoroughly tested</strong>, aiming for <strong>100% coverage</strong> to minimize bugs. (<strong>JaCoCo</strong>)</li>
+</ul>
+<p>Despite following these CI/CD practices, we encountered <strong>challenge due technical debt from old version of dependencies</strong> and frameworks.</p>
+<h2 id="the-challenge">The Challenge</h2>
+<blockquote>
+<p>Our application, originally developed with <strong>Spring Boot 2</strong>, went through many changes. However, developers found it <strong>difficult to keep the codebase up-to-date with new versions</strong>. Many were not concerned with upgrades, leading to significant technical debt—a daunting challenge.</p>
+</blockquote>
+<p>Consider that, you receive a new Android update on your phone, you typically upgrade without hesitation, understanding the benefits it brings and the potential issues it fixes. However, in software development, the mindset often shifts. Developers frequently question why they should upgrade, focusing on potential disruptions or the effort required, rather than proactively seeking improvements.</p>
+<p>The core issue is that developers tend to upgrade only when absolutely necessary. In contrast, regular and proactive updates are essential for maintaining a healthy, secure, and efficient codebase.</p>
+<blockquote>
+<p>💡 Shouldn’t the approach be the opposite, i.e we upgrade by default and seek reasons/excuses (only) if we don&rsquo;t ?</p>
+</blockquote>
+<h2 id="our-approach">Our Approach</h2>
+<p>To address technical debt and keep our codebase up-to-date, we implemented these steps:</p>
+<ol>
+<li><strong>Detect Version Upgrades</strong>: We use the <a href="https://www.mojohaus.org/versions/versions-maven-plugin/index.html">Maven Versions</a> plugin with its &ldquo;update-*&rdquo; goals. It checks for the latest versions of our dependencies. If it finds updates, it creates a backup file named <code>pom.xml.versionsBackup</code> and updates the <code>pom.xml</code> file with the new versions.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>mvn versions:update-parent versions:update-properties
+</span></span></code></pre></div><ol start="2">
+<li><strong>Enforce Build Failure</strong>: <a href="https://maven.apache.org/enforcer/maven-enforcer-plugin/usage.html">Maven Enforcer</a> plugin checks for the existence of the <code>pom.xml.versionsBackup</code> file. If this file is found, indicating pending upgrades, the build will fail. This ensures updates are addressed promptly.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>mvn clean package
+</span></span></code></pre></div><ol start="3">
+<li><strong>Exclude exceptions</strong>: Allow specific dependencies to be excluded from upgrades when necessary, we can configure exclusions. This flexibility ensures critical or incompatible updates can be managed without stopping the entire upgrade process.</li>
+</ol>
+<h2 id="faq">FAQ</h2>
+<p>By taking these steps, we ensure our codebase stays current and secure, preventing technical debt from becoming a barrier to progress. However, this approach is not without its challenges and resistance.</p>
+<ol start="0">
+<li><strong>Avoiding deprrecated API</strong>: &ldquo;On a long running project deprecated apis are major blockers for upgrades. We can resolve them by failing the build using the below maven configuration&rdquo;</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span>		<span style="color:#f92672">&lt;maven.compiler.showDeprecation&gt;</span>true<span style="color:#f92672">&lt;/maven.compiler.showDeprecation&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;maven.compiler.failOnWarning&gt;</span>true<span style="color:#f92672">&lt;/maven.compiler.failOnWarning&gt;</span>
+</span></span></code></pre></div><ol>
+<li>
+<p><strong>Typical question from Product/business people</strong>: &ldquo;When my application is working, why do I need to upgrade to the latest version of technologies/libraries?&rdquo;</p>
+<p><strong>Answer</strong>: Business functionalities might work, but upgrades offer:</p>
+<ul>
+<li>Fixing security vulnerabilities</li>
+<li>Performance improvements</li>
+<li>Cost effectiveness (continuous upgrades cost less than big upgrades)</li>
+<li>Minimal tech debt</li>
+</ul>
+</li>
+<li>
+<p><strong>Doesn&rsquo;t these upgrades incur time and effort (cost)?</strong></p>
+<p><strong>Answer</strong>: Yes, but the cost is minimal with continuous upgrades compared to bigger upgrades.</p>
+<ul>
+<li>Bigger upgrades are like mountains. Climbing a mountain in one shot is challenging. Similarly, big upgrades require significant time and money.</li>
+<li>Frequent upgrades are like steps up the mountain. Regular upgrades make reaching the summit easier, with only a little extra effort and cost needed.</li>
+</ul>
+</li>
+<li>
+<p><strong>Is there any pre-request to implement this?</strong></p>
+<p><strong>Answer</strong>: Yes. We need the propery automation before you start with this. if there is not enough automation, better you work on that before you implement this.</p>
+</li>
+<li>
+<p><strong>Known Limitations</strong></p>
+<ul>
+<li><a href="https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt">Maven coordinate changes</a> are not handled.</li>
+<li>Identify the missing upgrades - Build failes due to missing upgrades. but, he should know which is the missing upgrade. Work is in progress to find the differences and communicate clearly to developers.</li>
+</ul>
+</li>
+</ol>
+
+</article>
+
+
+    </div>
+    
+  </main>
+
+  
+  <div class="fixed-bottom bg-transparent">
+  <small>Made with <i class="fas fa-heart"></i>
+    for the learning by students of <a class="text-decoration-none" href="http://www.techatpark.com" target="_techatpark">Tech@Park</a>
+  </small>
+</div>
+
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+
+
+
+
+  
+    
+
+  
+</body>
+
+</html>

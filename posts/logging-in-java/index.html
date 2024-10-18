@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <base href="/">
+    <title>TECHATPARK - BUILDING PRO-GRAMMERS !</title>
+
+    
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/logo_full.svg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/logo_full.svg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/logo_full.svg"
+    />
+    <link rel="manifest" href="/images/site.webmanifest" />
+
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+    
+
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    
+
+       
+
+  
+
+
+</head>
+
+<body>
+  
+  
+  
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="/images/logo.svg" alt="" width="30" height="30" class="d-inline-block align-text-top">
+      TECH@PARK
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        
+        <li class="nav-item">
+          <a class="nav-link active" href="/our-method">Our Method</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/our-values">Our Values</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/our-achievements">Our Achievement</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/posts">Blog</a>
+        </li>
+        
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+ 
+
+  <main class="container-fluid w-100 h-100">
+    <div class="row w-100 h-100" id="main-container">
+      
+
+<article>
+  <header>
+    <h1>Logging in Java</h1>
+    <p>by 
+  
+  <a href="/authors/rmhari">rmhari</a>
+
+</p>
+    
+  </header>
+
+  <p>Logging Greatness:</p>
+<p>For many years, logs have been an essential part of troubleshooting application and infrastructure performance. They help provide visibility into how our applications are running on each of the various infrastructure components.</p>
+<p>Log data contains information such as out of memory exception or hard disk errors. This is very helpful information that will help us identify the “why” behind a problem either that a user has brought to our attention or that we have uncovered.</p>
+<p>But their sheer volume can limit how fast that gets done. So integrating logging with monitoring can help sift through this data much more quickly to solve customer experience issues caused by a slow-working application.</p>
+<p>It gives us clear understanding of the behaviour of our applications and in debugging in simple terms</p>
+<p>Now a days Important information of a business can be obtained from logs.</p>
+<p>Like,  User preferences
+System important datas
+Security threats
+Competitive analysis etc</p>
+<p>Testing team should consider monitory the logs on a regular basis is important.</p>
+<p>Most logging frameworks have a set of logging levels similar to the following: fatal, error, warning, info or debug.
+If you’re only logging errors, which is often the default and only certain types of info, you may not run into any issues.</p>
+<p>But as soon as you increase your logging level to debugging, which you may be using when in development, you could start having some disk space concerns. This may not be an issue if it’s one application.
+But if multiple applications are running, system resources could be affected.</p>
+<p>So we must take care of WHAT WE LOG AND WHERE WE LOG.</p>
+<p>Unfortunately the JDK did not include logging in its original release so by the time the Java Logging API was added several other logging frameworks had become widely used - in particular Apache Commons Logging (also known as Java Commons Logging or JCL) and log4J. This led to problems when integrating different third-party libraries (JARs) each using different logging frameworks. Pluggable logging frameworks (wrappers) were developed to solve this problem.</p>
+<p>Building Blocks of logging :</p>
+<pre><code>		The Logger 
+		The Formatter
+        The Filter
+		The Appender (or Handler)
+</code></pre>
+<p>The Logger is responsible for capturing the message to be logged along with certain metadata and passing it to the logging framework.</p>
+<p>After receiving the message, the framework calls the Formatter with the message which formats it for output.
+eg: SimpleFormatter
+XMLFormatter</p>
+<p>The Filter can filter out log messages, meaning decide if the message gets logged or not.</p>
+<p>The framework then hands the formatted message to the appropriate Appender/Handler for disposition. This might include output to a console display, writing to disk, appending to a database, or generating an email.
+eg: ConsoleHandler
+FileHandler
+StreamHandler
+SocketHandler
+MemoryHandler</p>
+<p>Logging Levels:</p>
+<p>The standard ranking of logging levels is as follows: ALL &lt; TRACE &lt; DEBUG &lt; INFO &lt; WARN &lt; ERROR &lt; FATAL &lt; OFF.</p>
+<p>OFF</p>
+<p>This log level does not log anything. This OFF level is used to turn off logging and is the greatest possible rank. With this log level, nothing gets logged at all.</p>
+<p>FATAL</p>
+<p>FATAL means that the application is about to stop a serious problem or corruption from happening. The FATAL level of logging shows that the application’s situation is catastrophic, such that an important function is not working. For example, you can use FATAL log level if the application is unable to connect to the data store.</p>
+<p>ERROR</p>
+<p>Unlike the FATAL logging level, error does not mean your application is aborting. Instead, there is just an inability to access a service or a file. This ERROR shows a failure of something important in your application. This log level is used when a severe issue is stopping functions within the application from operating efficiently. Most of the time, the application will continue to run, but eventually, it will need to be addressed.</p>
+<p>WARN</p>
+<p>The WARN log level is used when you have detected an unexpected application problem. This means you are not quite sure whether the problem will recur or remain. You may not notice any harm to your application at this point. This issue is usually a situation that stops specific processes from running. Yet it does not mean that the application has been harmed. In fact, the code should continue to work as usual. You should eventually check these warnings just in case the problem reoccurs.</p>
+<p>INFO</p>
+<p>INFO messages are like the normal behavior of applications. They state what happened. For example, if a particular service stopped or started or you added something to the database. These entries are nothing to worry about during usual operations. The information logged using the INFO log is usually informative, and it does not necessarily require you to follow up on it.</p>
+<p>DEBUG</p>
+<p>With DEBUG, you are giving diagnostic information in a detailed manner. It is verbose and has more information than you would need when using the application. DEBUG logging level is used to fetch information needed to diagnose, troubleshoot, or test an application. This ensures a smooth running application.</p>
+<p>TRACE</p>
+<p>The TRACE log level captures all the details about the behavior of the application. It is mostly diagnostic and is more granular and finer than DEBUG log level. This log level is used in situations where you need to see what happened in your application or what happened in the third-party libraries used. You can use the TRACE log level to query parameters in the code or interpret the algorithm’s steps.</p>
+<p>ALL</p>
+<p>This log level logs any logging levels that are defined. It logs everything and includes custom logging levels as well. It is the combination of all other logging levels.</p>
+<p>Logging best practices:</p>
+<ol>
+<li>Use a Standard Logging Library</li>
+</ol>
+<p>Things to consider and evaluate are performance, flexibility, appenders for new log centralization solutions, and so on. If you tie yourself directly to a single framework the switch to a newer library can take a substantial amount of work and time. Keep that in mind and go for the API that will give you the flexibility to swap logging libraries in the future. Just like with the switch from Log4j to Logback and to Log4j 2, when using the SLF4J API the only thing you need to do is change the dependency, not the code.</p>
+<ol start="2">
+<li>Select Your Appenders Wisely</li>
+</ol>
+<p>Appenders define where your log events will be delivered. The most common appenders are the Console and File Appenders.</p>
+<ol start="3">
+<li>Use Meaningful Messages</li>
+</ol>
+<p>Your log events should include messages that are unique to the given situation, clearly describe them and inform the person reading them. Imagine a communication error occurred in your application. You might do it like this:</p>
+<p>LOGGER.warn(&ldquo;Communication error&rdquo;);
+But you could also create a message like this:</p>
+<p>LOGGER.warn(&ldquo;Error while sending documents to your server, response code %d, response message %s. The message sending will be retried.&rdquo;, responseCode, responseMessage)</p>
+<ol start="4">
+<li>
+<p>Logging Java Stack Traces</p>
+<p>public static void main(String[] args) {
+try {
+throw new IOException(&ldquo;This is an I/O error&rdquo;);
+} catch (IOException ioe) {
+LOGGER.error(&ldquo;Error while executing main thread&rdquo;, ioe);
+}
+}</p>
+</li>
+</ol>
+<p>11:30:17.527 ERROR - Error while executing main thread
+java.io.IOException: This is an I/O error
+at com.logging.main(Log4JException.java:13) [main/:?]</p>
+<p>It contains relevant information – i.e. the name of the class, the method where the problem occurred, and finally the line number where the problem happened. Of course, in real-life situations, the stack traces will be longer, but you should include them to give you enough information for proper debugging.</p>
+<ol start="5">
+<li>Keep the Log Structure Consistent</li>
+</ol>
+<p>The structure of your log events should be consistent. This is not only true within a single application or set of microservices, but should be applied across your whole application stack. With similarly structured log events it will be easier to look into them, compare them, correlate them, or simply store them in a dedicated data store.</p>
+<ol start="6">
+<li>Add Context to Your Logs</li>
+</ol>
+<p>Information context is important and for us developers and DevOps a log message is information. Look at the following log entry:</p>
+<p>[2020-06-29 16:25:34] [ERROR ] An error occurred!</p>
+<p>We know that an error appeared somewhere in the application. We don’t know where it happened, we don’t know what kind of error it was, we only know when it happened. Now look at a message with slightly more contextual information:</p>
+<p>[2020-06-29 16:25:34] [main] [ERROR ] com.logging.ParsingErrorExample - A parsing error occurred for user with id 1234!</p>
+<p>The same log record, but a lot more contextual information. We know the thread in which it happened, we know what class the error was generated at. We modified the message as well to include the user that the error happened for, so we can get back to the user if needed. We could also include additional information like diagnostic contexts. Think about what you need and include it.</p>
+<p>We have something like the PatternLayout in Log4J2 that gives you all that you need to include context information.</p>
+<ol start="7">
+<li>
+<p>Don’t Log Too Much or Too Little</p>
+</li>
+<li>
+<p>Avoid Logging Sensitive Information</p>
+</li>
+<li>
+<p>better to usea  Log Management Solution</p>
+</li>
+</ol>
+<p>How do we make the logs much more useful? Through structuring those logs.</p>
+<p>What Can Structured Logging Do For Us?</p>
+<p>Customers often feel that support for business analytics is a much lower priority than adding new features. After all, we can always add that stuff later, right? My experience is that by the time &ldquo;later&rdquo; comes, the effort to modify the software has become prohibitive… unless you’ve been using structured logging all along. In that case, adding business analytics support turns out to be very easy to do. In many cases, all you need to do is to create some canned reports using the log analysis tools.</p>
+<p>Here are a few other questions that structured logging can help us answer easily if it is implemented from the very beginning:</p>
+<p>Diagnostics</p>
+<p>What caused this stack trace?</p>
+<p>What was the sequence of events that led up to this request failing unexpectedly?</p>
+<p>Analytics</p>
+<p>Who is using our service?</p>
+<p>What does usage look like over time?</p>
+<p>What are our customers using our system to do?</p>
+<p>Monitoring</p>
+<p>How long is it taking to process a request?</p>
+<p>How much available memory is there?</p>
+<p>The idea of structured logging is to take an application log that is delivered as a string of text and convert it into a simple relational data set that can be more easily searched and analyzed.</p>
+<p>Say your application lets users create reports, which you want to log. The bare minimum log message for that could look like this:</p>
+<p>2021-07-29 | New report created</p>
+<p>You have the date in ISO-8601 format, followed by the message. It could use some more context, such as the time of day and a log level to express the severity of the event:</p>
+<p>2021-07-29 14:52:55.1623|INFO|New report created</p>
+<p>Things are getting better. Let’s also include the ID of the user who created the report:</p>
+<p>2021-07-29 14:54:55.1623|INFO|New report created by user 4253</p>
+<p>It wouldn’t be a stretch to imagine log events recording different occurrences:</p>
+<p>INFO|New report created by user 4253
+INFO|Report updated by user 257
+INFO|User 478 deleted report</p>
+<p>As you can see, users can also change and delete reports. Also, the last example doesn’t use the same format as the other two.</p>
+<p>Now comes the tricky part. Let’s say you need to search through your log events to find all instances of a given user performing some action to reports. That’s not so easy to do, thanks to the inconsistent format of the messages.</p>
+<p>Besides reports, users can create other types of artifacts, and such activities are also logged. With the right amount of regex, you’ll probably be able to pull it off. However, such code is error-prone, fragile, and doesn’t generate the most value for you and your customers.</p>
+<p>Structured Logging to the Rescue:</p>
+<p>Structured logging solves the above problems by generating easily parsable logs. For instance, the following is an example of how we could structure the events in the example using JSON:</p>
+<p>{
+&ldquo;TimeStamp&rdquo;: &ldquo;2021-07-29 14:52:55.1623&rdquo;,
+&ldquo;Level&rdquo;: &ldquo;Info&rdquo;,
+&ldquo;Message&rdquo;: &ldquo;New report created&rdquo;,
+&ldquo;UserId&rdquo;: &ldquo;4253&rdquo;,
+&ldquo;ReportId&rdquo;: &ldquo;4567&rdquo;,
+&ldquo;Action&rdquo;: &ldquo;Report_Creation&rdquo;
+}</p>
+<p>We have properties that indicate what action occurred and the identifications of the relevant objects, such as the user and the report created. Parsing a collection of events in the format above makes it easier to search through events than it would be with plain text.</p>
+<p>Logging frameworks:</p>
+<p>Apache Log4j</p>
+<p>Apache Log4j is a very old logging framework and was the most popular one for several years. It introduced basic concepts, like hierarchical log levels and loggers, that are still used by modern logging frameworks.
+you can use the SLF4JAPI that I showed you earlier to write log messages with Log4j</p>
+<p>Logback</p>
+<p>It follows the same concepts as Log4j but was rewritten to improve the performance, to support SLF4J natively, and to implement several other improvements like advanced filtering options and automatic reloading of logging configurations.</p>
+<p>Apache Log4j2</p>
+<p>it also allows lazy evaluation of log statements based on lambda expressions, offers asynchronous loggers for low-latency systems, and provides a garbage-free mode to avoid any latency caused by garbage collector operations.</p>
+<p>Writing Log Messages with SLF4J</p>
+<p>Writing log messages with SLF4J is very easy. You first need to call the getLogger method on the LoggerFactory to instantiate a new Logger object. we can call any logger methods then and print out the msg.</p>
+<p>In Short What JPA is for RDBMS, SLF4J is for Log Providers</p>
+
+</article>
+
+
+    </div>
+    
+  </main>
+
+  
+  <div class="fixed-bottom bg-transparent">
+  <small>Made with <i class="fas fa-heart"></i>
+    for the learning by students of <a class="text-decoration-none" href="http://www.techatpark.com" target="_techatpark">Tech@Park</a>
+  </small>
+</div>
+
+  
+
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+
+
+
+
+  
+    
+
+  
+</body>
+
+</html>

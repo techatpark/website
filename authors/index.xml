@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors on TECHATPARK - BUILDING PRO-GRAMMERS !</title>
+    <link>/authors/</link>
+    <description>Recent content in Authors on TECHATPARK - BUILDING PRO-GRAMMERS !</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>/authors/rmhari/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/rmhari/</guid>
+      <description>Author 1 loves cupcakes. Liquorice jelly beans jelly beans. Tootsie roll cotton candy jelly beans. Lollipop tiramisu macaroon macaroon apple pie sesame snaps carrot cake marzipan liquorice. Liquorice topping lemon drops pudding.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/authors/sathishk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/sathishk/</guid>
+      <description>Software architect specialised in building modern Cloud-native applications, practicing Open Source technologies both by consuming as well as contributing. I believe speaking about/listening to technology is the best way to learn and you can find me doing the same in meetups/conferences around Chennai, Bengaluru, and Singapore. An active member of the Bangalore Java user group, spoken at various international conferences. I enjoy producing quality software using Continuous Delivery, TDD, Design Systems, UX, and modern engineering practices.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/authors/the-cookie-monster/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/the-cookie-monster/</guid>
+      <description>Author 2 loves cookies. Topping chocolate croissant. Chocolate bar wafer pudding brownie cake jelly-o soufflé sesame snaps. Tootsie roll pie sweet roll jelly beans gummies.</description>
+    </item>
+    
+    <item>
+      <title>Cupcake Lover</title>
+      <link>/authors/cupcake-lover/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/cupcake-lover/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vijaywhat</title>
+      <link>/authors/vijaywhat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/vijaywhat/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

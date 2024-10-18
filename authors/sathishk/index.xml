@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TECHATPARK - BUILDING PRO-GRAMMERS !</title>
+    <link>/authors/sathishk/</link>
+    <description>Recent content on TECHATPARK - BUILDING PRO-GRAMMERS !</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/authors/sathishk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Empowering Tomorrow: Navigating the AI Landscape in Education and Beyond</title>
+      <link>/posts/empowering-with-ai/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/empowering-with-ai/</guid>
+      <description>AI is not a distant vision of the future; it has already permeated our lives, reshaping industries and challenging conventional notions of work and innovation. In the ongoing dialogue about AI, there are two prevalent perspectives: one prophesizes a future where AI replaces human roles and responsibilities, while the other dismisses AI as a mere buzzword, suggesting that it lacks the transformative power to bring about substantial change. As professionals navigating this evolving landscape, it is crucial to refrain from taking extreme sides and instead strive to understand the nuanced reality that lies somewhere in between.</description>
+    </item>
+    
+    <item>
+      <title>Microserices - Not a Binary Choice</title>
+      <link>/posts/microservices-not-a-binary-choice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/microservices-not-a-binary-choice/</guid>
+      <description>Chapter 1: The Great Debate: Monoliths vs. Microservices As software engineers, we face numerous challenges on a daily basis. Perhaps your team is struggling to stay productive, your application isn&amp;rsquo;t scalable enough, or your response times are sluggish. Or maybe you&amp;rsquo;re simply having a hard time acing those job interviews. It can be overwhelming to tackle each problem individually, which is why many software gurus are promoting a single solution for all of these issues: microservices.</description>
+    </item>
+    
+    <item>
+      <title>Beyond Competitive Programming: The Flaws in Software Interview Process</title>
+      <link>/posts/beyond-competitive-programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/beyond-competitive-programming/</guid>
+      <description>Recently, I had a conversation with a college student who was interested in finding job opportunities at Tier 1 (MAANG/FAANG)companies (those offering high salaries). He asked me for advice and I shared what I knew about microservices, cloud computing, and JAMstack. However, he insisted that he was good at competitive programming and only wanted a job where he would be asked to solve programming puzzles every day and paid a high salary in return.</description>
+    </item>
+    
+    <item>
+      <title>Persistent Problems with Persistence: The Evolution of Java Database Interaction</title>
+      <link>/posts/problems-with-persistence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/problems-with-persistence/</guid>
+      <description>Introduction: Over the years, Java&amp;rsquo;s interaction with relational databases has undergone significant transformations. As the backbone of enterprise application development, the way Java applications connect with and interact with databases has evolved to meet the demands of modern software development. These changes have not only influenced the way developers write code but also brought about major migrations and improvements in the database connectivity landscape.
+Code migrations are no small feat and often come with considerable costs and time investments.</description>
+    </item>
+    
+  </channel>
+</rss>

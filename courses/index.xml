@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Courses on TECHATPARK - BUILDING PRO-GRAMMERS !</title>
+    <link>/courses/</link>
+    <description>Recent content in Courses on TECHATPARK - BUILDING PRO-GRAMMERS !</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 14 Nov 2018 19:02:50 -0700</lastBuildDate><atom:link href="/courses/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Basics of Cybersecurity - Data At Rest </title>
+      <link>/courses/security-data-at-rest/</link>
+      <pubDate>Wed, 14 Nov 2018 19:02:50 -0700</pubDate>
+      
+      <guid>/courses/security-data-at-rest/</guid>
+      <description>Basics of Cybersecurity Data At Rest Data at rest By this term we mean data that is not being accessed and is stored on a physical or logical medium. Examples may be files stored on file servers, records in databases, documents on flash drives, hard disks etc. Techniques Pseudonymized Anonymized Generalized Terminologies Plain Text Cipher Text Secret Key Data de-identification Data identification Pseudonymized The term “pseudonymity” refers to using a different name on social media, such as a pen-name or nick-name.</description>
+    </item>
+    
+    <item>
+      <title>Empowering Tomorrow: Navigating the AI Landscape in Education and Beyond</title>
+      <link>/courses/empowering-with-ai/</link>
+      <pubDate>Wed, 14 Nov 2018 19:02:50 -0700</pubDate>
+      
+      <guid>/courses/empowering-with-ai/</guid>
+      <description>- AI is not a distant vision of the future; it has already permeated our lives, reshaping industries and challenging conventional notions of work and innovation. - Two prevalent perspectives: one prophesizes a future where AI replaces human roles and responsibilities, while the other dismisses AI as a mere buzzword. - Professionals should refrain from taking extreme sides and strive to understand the nuanced reality that lies somewhere in between.</description>
+    </item>
+    
+    <item>
+      <title>Introducing SJSON: A Tailor-Made and Hackable JSON Parser for Optimized API Development</title>
+      <link>/courses/sjson/</link>
+      <pubDate>Wed, 14 Nov 2018 19:02:50 -0700</pubDate>
+      
+      <guid>/courses/sjson/</guid>
+      <description>Introducing SJSON A Tailor-Made and Hackable JSON Parser for Optimized API Development JSON Parser Usecases Code Editors Databases API Servers Tailor-Made Code Editors vs API Servers text editors that use JSON parsers to pinpoint errors, API servers typically only require a simple validation – is the JSON data valid or not? Databases vs API Servers Unlike databases that perform querying on JSON data, API servers don&#39;t require such functionality. Hackable Which one is valid ?</description>
+    </item>
+    
+    <item>
+      <title>Open Source means Business</title>
+      <link>/courses/opensource-means-business/</link>
+      <pubDate>Wed, 14 Nov 2018 19:02:50 -0700</pubDate>
+      
+      <guid>/courses/opensource-means-business/</guid>
+      <description>Open Source is a stupid idea Foundation of Software Talent Company System - Govt/Educaion Definition “Opensource means technology that is run by some great people who does not care about much money and makes cheap business solutions.” Testing Times Software Development - Developing Software Work around the product - work on the product One Solution fits all to One Solutions fits with all Design for destruction THE CHANGE Software Recipes THE Skills THE Mindset THE Purpose Lets Buy the Skill Fresh Talent Experience Fresh Talent Tier 1 Strong Academics Good English Experience DS and Algo Value of Words The REAL Problem 3 Months Notice Company Reduce Salary to 50% (9L) Market Resumes Pachai gets an offer 11L 2 Month More Pachai gets an offer 13L 1 Month More Pachai gets an offer 15L 15 Days More Pachai gets an offer 17L Just few Days More ?</description>
+    </item>
+    
+    <item>
+      <title>Microserices - Not a Binary Choice</title>
+      <link>/courses/microservices-not-a-binary-choice/</link>
+      <pubDate>Wed, 14 Nov 2018 19:02:50 -0700</pubDate>
+      
+      <guid>/courses/microservices-not-a-binary-choice/</guid>
+      <description>Microserices - Not a Binary Choice SATHISH KUMAR THIYAGARAJAN Chapter 1: The Great Debate The Challenges team is struggling to stay productive
+application isn&#39;t scalable enough
+your response times are sluggish
+hard time clearing those job interviews
+Microservices The Transformation Monolith
+Microservices
+Modular Monolith
+Chapter 2: A Cautionary Tale The Outcome Cost
+Complexity
+Lack of Standard
+Performance: APP and Team
+Only for rich ?! Chapter 3: Monoliths and Microservices as Families Monolithic Microservices Easy to Split.</description>
+    </item>
+    
+  </channel>
+</rss>
