@@ -1,6 +1,10 @@
 name: Node CI
 
-on: [push]
+on:
+  push:
+    branches: [develop]
+  pull_request:
+    branches: [develop]
 
 jobs:
   build:
@@ -9,8 +13,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18.x]
-
+        node-version: [20.x]
     steps:
     - uses: actions/checkout@v1
     - name: Use Node.js ${{ matrix.node-version }}
@@ -20,7 +23,7 @@ jobs:
     - name: npm install, build, and test
       run: |
         npm install
-        echo 'techatpark.com' > dist/CNAME
+        npm run build
       env:
         CI: true
     - name: Deploy 🚀
