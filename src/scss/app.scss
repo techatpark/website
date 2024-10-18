@@ -14,6 +14,18 @@ $body-bg: #f5efe0;
 $navbar-dark-color:   #ffffff;
 
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+
+.social-icons {
+    color: white;
+}
+.social-icons a {
+    margin-left: 15px;
+    color: white;
+}
+.social-icons a:hover {
+    color: #ffd700; /* Golden on hover */
+}
 
 
 
