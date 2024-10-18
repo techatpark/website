@@ -10,7 +10,8 @@
     "build:src": "parcel build",
     "build:site": "hugo --minify -d ../src -s site -v",
     "build": "npm run build:site && npm run build:src",
-    "create": "hugo new site"
+    "create": "hugo new site",
+    "serve": "hugo server"
   },
   "author": "",
   "license": "ISC",
