@@ -1,67 +1,28 @@
 {
-  "name": "techatpark-web",
+  "name": "workspace",
   "version": "1.0.0",
-  "description": "Techatpark Web Portal",
-  "author": "Sathish Kumar Thiyagarajan",
-  "license": "GPL-3.0",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/techatpark/website.git"
-  },
-  "keywords": [
-    "npm",
-    "scripts",
-    "npm scripts",
-    "watch",
-    "minify",
-    "compress"
-  ],
-  "bugs": {
-    "url": "https://github.com/techatpark/npm_scripts_static-ref/issues"
-  },
-  "homepage": "https://github.com/techatpark/npm_scripts_static-ref#readme",
-  "devDependencies": {
-    "@babel/core": "^7.18.10",
-    "@rollup/plugin-babel": "^5.3.1",
-    "@rollup/plugin-multi-entry": "^4.1.0",
-    "@rollup/plugin-node-resolve": "^13.3.0",
-    "@rollup/plugin-replace": "^4.0.0",
-    "autoprefixer": "^10.4.8",
-    "bootstrap": "5.2.3",
-    "browser-sync": "^2.27.10",
-    "copy-files-from-to": "^3.2.2",
-    "eslint": "8.21.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-import": "^2.26.0",
-    "hugo-bin": "0.102.0",
-    "npm-run-all": "4.1.5",
-    "onchange": "7.1.0",
-    "postcss": "^8.4.14",
-    "postcss-cli": "^10.0.0",
-    "precss": "^3.1.2",
-    "prettier": "2.7.1",
-    "rimraf": "3.0.2",
-    "rollup": "^2.77.2",
-    "sass": "1.54.3"
-  },
+  "description": "Gurukulams Workspace",
+  "source": "src/index.html",
   "scripts": {
-    "clean": "rimraf dist",
-    "lint": "eslint src/js --ext .js",
-    "serve": "browser-sync start --config browser-sync.js",
-    "format:js": "prettier --write src/js",
-    "build:hugo": "hugo -d ../dist -s site -v",
-    "build:sass": "sass src/scss:dist/css",
-    "build:css": "postcss src/css --dir dist/css",
-    "build:js": "rollup -c",
-    "build": "run-s clean format:js lint build:*",
-    "watch:hugo": "onchange \"site\" -- run-s build:hugo",
-    "watch:sass": "onchange \"src/scss\" -- run-s build:sass",
-    "watch:css": "onchange \"src/css\" -- run-s build:css",
-    "watch:js": "onchange \"src/js\" -- run-s format:js build:js",
-    "start": "npm run build && run-p serve watch:*",
-    "postinstall": "npm run build"
+    "watch:src": "parcel",
+    "watch:site": "onchange \"site\" -- run-s build:site",
+    "start": "npm run build && run-p watch:site watch:src",
+    "build:src": "parcel build",
+    "build:site": "hugo --minify -d ../src -s site -v",
+    "build": "npm run build:site && npm run build:src",
+    "create": "hugo new site"
   },
-  "browserslist": [
-    "defaults"
-  ]
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/plugin": "^2.12.0",
+    "@parcel/transformer-sass": "^2.12.0",
+    "@parcel/transformer-webmanifest": "^2.12.0",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "hugo-bin": "^0.133.1",
+    "npm-run-all": "4.1.5",
+    "onchange": "^7.1.0",
+    "parcel": "^2.12.0"
+  }
 }
