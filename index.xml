@@ -151,6 +151,15 @@ Enforce consistent coding standards, making it easier for new contributors to un
     </item>
     
     <item>
+      <title>API Design: The Art of Programming</title>
+      <link>/posts/api-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/api-design/</guid>
+      <description>APIs are the backbone of modern software, and developers create them daily. Yet, many treat API creation as a task to complete rather than an art to refine. Often, we design interfaces to serve an immediate purpose without thinking deeply about their structure. But API design is more than a technical process—it’s a craft requiring thoughtfulness, intuition, and an eye for elegance. While techniques can be taught, true API design involves creating something that is functional, user-friendly, and maintainable in the long run.</description>
+    </item>
+    
+    <item>
       <title>Post No. 1</title>
       <link>/our-achievements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
