@@ -132,12 +132,13 @@
 </span></span><span style="display:flex;"><span>dataSource<span style="color:#f92672">.</span><span style="color:#a6e22e">setPassword</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;sa&#34;</span><span style="color:#f92672">);</span>
 </span></span></code></pre></div><p>We define the <code>Movie</code> record:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> record <span style="color:#a6e22e">Movie</span><span style="color:#f92672">(</span>Long id<span style="color:#f92672">,</span> String title<span style="color:#f92672">,</span> String directedBy<span style="color:#f92672">)</span> <span style="color:#f92672">{}</span>
-</span></span></code></pre></div><h3 id="inserting-records">Inserting Records</h3>
+</span></span></code></pre></div><p>Lets now see how we will work with <a href="https://www.baeldung.com/sql/sql-statements-queries">Statement and Queries</a> in Database</p>
+<h3 id="statement-eg-inserting-records">Statement (E.g Inserting Records)</h3>
 <p>We insert two movie records:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> movie(title, directed_by) 
 </span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">VALUES</span> (<span style="color:#e6db74">&#39;Dunkirk&#39;</span>, <span style="color:#e6db74">&#39;Nolan&#39;</span>),
 </span></span><span style="display:flex;"><span>             (<span style="color:#e6db74">&#39;Inception&#39;</span>, <span style="color:#e6db74">&#39;Nolan&#39;</span>);
-</span></span></code></pre></div><h4 id="jdbc-code-for-inserting-records">JDBC Code for Inserting Records</h4>
+</span></span></code></pre></div><p>Let us use JDBC for Inserting Records as given below</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>String sql <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;INSERT INTO movie(title, directed_by) VALUES (?, ?), (?, ?)&#34;</span><span style="color:#f92672">;</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">try</span> <span style="color:#f92672">(</span>Connection conn <span style="color:#f92672">=</span> dataSource<span style="color:#f92672">.</span><span style="color:#a6e22e">getConnection</span><span style="color:#f92672">();</span>
@@ -151,11 +152,20 @@
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>    ps<span style="color:#f92672">.</span><span style="color:#a6e22e">executeUpdate</span><span style="color:#f92672">();</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><h3 id="querying-records">Querying Records</h3>
+</span></span></code></pre></div><p>Same can be done through a builder as</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>String sql <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;INSERT INTO movie(title, directed_by) VALUES (?, ?), (?, ?)&#34;</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">new</span> SqlBuilder<span style="color:#f92672">(</span>sql<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">.</span><span style="color:#a6e22e">param</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Dunkirk&#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">.</span><span style="color:#a6e22e">param</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Nolan&#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">.</span><span style="color:#a6e22e">param</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Inception&#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">.</span><span style="color:#a6e22e">param</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Nolan&#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">.</span><span style="color:#a6e22e">execute</span><span style="color:#f92672">(</span>dataSource<span style="color:#f92672">);</span>
+</span></span></code></pre></div><h3 id="query-eg-selecting-records">Query (E.g Selecting Record(s))</h3>
 <h4 id="single-record-query">Single Record Query</h4>
 <p>Query for a single movie by ID:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> id, title, directed_by <span style="color:#66d9ef">FROM</span> movie <span style="color:#66d9ef">WHERE</span> id <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
-</span></span></code></pre></div><h5 id="jdbc-code-for-single-record-query">JDBC Code for Single Record Query</h5>
+</span></span></code></pre></div><p>Let us use JDBC for Single Record Query as given below</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>String sql <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;SELECT id, title, directed_by FROM movie WHERE id = ?&#34;</span><span style="color:#f92672">;</span>
 </span></span><span style="display:flex;"><span>Movie movie <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
 </span></span><span style="display:flex;"><span>
@@ -169,10 +179,16 @@
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>Same can be done through a builder as</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>String sql <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;SELECT id, title, directed_by FROM movie WHERE id = ?&#34;</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>Movie movie <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> SqlBuilder<span style="color:#f92672">(</span>query<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">.</span><span style="color:#a6e22e">param</span><span style="color:#f92672">(</span><span style="color:#ae81ff">1</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>                  <span style="color:#f92672">.</span><span style="color:#a6e22e">queryForOne</span><span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">::</span>mapRow<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>                  <span style="color:#f92672">.</span><span style="color:#a6e22e">execute</span><span style="color:#f92672">(</span>connection<span style="color:#f92672">);</span>
 </span></span></code></pre></div><h4 id="multiple-record-query">Multiple Record Query</h4>
 <p>Query all movies:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> id, title, directed_by <span style="color:#66d9ef">FROM</span> movie;
-</span></span></code></pre></div><h5 id="jdbc-code-for-multiple-record-query">JDBC Code for Multiple Record Query</h5>
+</span></span></code></pre></div><p>Let us use JDBC for Multiple Record Query as given below</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>String sql <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;SELECT id, title, directed_by FROM movie&#34;</span><span style="color:#f92672">;</span>
 </span></span><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>Movie<span style="color:#f92672">&gt;</span> movies <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;&gt;();</span>
 </span></span><span style="display:flex;"><span>
@@ -181,9 +197,16 @@
 </span></span><span style="display:flex;"><span>     ResultSet rs <span style="color:#f92672">=</span> ps<span style="color:#f92672">.</span><span style="color:#a6e22e">executeQuery</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span>rs<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">())</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>        movies<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> Movie<span style="color:#f92672">(</span>rs<span style="color:#f92672">.</span><span style="color:#a6e22e">getLong</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;id&#34;</span><span style="color:#f92672">),</span> rs<span style="color:#f92672">.</span><span style="color:#a6e22e">getString</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;title&#34;</span><span style="color:#f92672">),</span> rs<span style="color:#f92672">.</span><span style="color:#a6e22e">getString</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;directed_by&#34;</span><span style="color:#f92672">)));</span>
+</span></span><span style="display:flex;"><span>        movies<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> Movie<span style="color:#f92672">(</span>rs<span style="color:#f92672">.</span><span style="color:#a6e22e">getLong</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;id&#34;</span><span style="color:#f92672">),</span> 
+</span></span><span style="display:flex;"><span>                              rs<span style="color:#f92672">.</span><span style="color:#a6e22e">getString</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;title&#34;</span><span style="color:#f92672">),</span> 
+</span></span><span style="display:flex;"><span>                              rs<span style="color:#f92672">.</span><span style="color:#a6e22e">getString</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;directed_by&#34;</span><span style="color:#f92672">)));</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>Same can be done through a builder as</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>String sql <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;SELECT id, title, directed_by FROM movie&#34;</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>Movie movie <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> SqlBuilder<span style="color:#f92672">(</span>query<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>                  <span style="color:#f92672">.</span><span style="color:#a6e22e">queryForList</span><span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">::</span>mapRow<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>                  <span style="color:#f92672">.</span><span style="color:#a6e22e">execute</span><span style="color:#f92672">(</span>connection<span style="color:#f92672">);</span>
 </span></span></code></pre></div>
 </article>
 
