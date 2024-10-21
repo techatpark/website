@@ -40,7 +40,9 @@ We define the `Movie` record:
 public record Movie(Long id, String title, String directedBy) {}
 ```
 
-### Inserting Records
+Lets now see how we will work with [Statement and Queries](https://www.baeldung.com/sql/sql-statements-queries) in Database
+
+### Statement (E.g Inserting Records)
 
 We insert two movie records:
 
@@ -50,7 +52,7 @@ INSERT INTO movie(title, directed_by)
              ('Inception', 'Nolan');
 ```
 
-#### JDBC Code for Inserting Records
+Let us use JDBC for Inserting Records as given below
 
 ```java
 String sql = "INSERT INTO movie(title, directed_by) VALUES (?, ?), (?, ?)";
@@ -68,7 +70,20 @@ try (Connection conn = dataSource.getConnection();
 }
 ```
 
-### Querying Records
+Same can be done through a builder as 
+
+```java
+String sql = "INSERT INTO movie(title, directed_by) VALUES (?, ?), (?, ?)";
+
+new SqlBuilder(sql)
+      .param("Dunkirk")
+      .param("Nolan")
+      .param("Inception")
+      .param("Nolan")
+    .execute(dataSource);
+```
+
+### Query (E.g Selecting Record(s))
 
 #### Single Record Query
 
@@ -78,7 +93,7 @@ Query for a single movie by ID:
 SELECT id, title, directed_by FROM movie WHERE id = 1;
 ```
 
-##### JDBC Code for Single Record Query
+Let us use JDBC for Single Record Query as given below
 
 ```java
 String sql = "SELECT id, title, directed_by FROM movie WHERE id = ?";
@@ -96,6 +111,16 @@ try (Connection conn = dataSource.getConnection();
 }
 ```
 
+Same can be done through a builder as 
+
+```java
+String sql = "SELECT id, title, directed_by FROM movie WHERE id = ?";
+Movie movie = new SqlBuilder(query)
+                    .param(1)
+                  .queryForOne(this::mapRow)
+                  .execute(connection);
+```
+
 #### Multiple Record Query
 
 Query all movies:
@@ -104,7 +129,7 @@ Query all movies:
 SELECT id, title, directed_by FROM movie;
 ```
 
-##### JDBC Code for Multiple Record Query
+Let us use JDBC for Multiple Record Query as given below
 
 ```java
 String sql = "SELECT id, title, directed_by FROM movie";
@@ -115,7 +140,18 @@ try (Connection conn = dataSource.getConnection();
      ResultSet rs = ps.executeQuery()) {
 
     while (rs.next()) {
-        movies.add(new Movie(rs.getLong("id"), rs.getString("title"), rs.getString("directed_by")));
+        movies.add(new Movie(rs.getLong("id"), 
+                              rs.getString("title"), 
+                              rs.getString("directed_by")));
     }
 }
+```
+
+Same can be done through a builder as 
+
+```java
+String sql = "SELECT id, title, directed_by FROM movie";
+Movie movie = new SqlBuilder(query)
+                  .queryForList(this::mapRow)
+                  .execute(connection);
 ```
