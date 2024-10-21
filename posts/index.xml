@@ -102,5 +102,15 @@ Enforce consistent coding standards, making it easier for new contributors to un
       <description>APIs are the backbone of modern software, and developers create them daily. Yet, many treat API creation as a task to complete rather than an art to refine. Often, we design interfaces to serve an immediate purpose without thinking deeply about their structure. But API design is more than a technical process—it’s a craft requiring thoughtfulness, intuition, and an eye for elegance. While techniques can be taught, true API design involves creating something that is functional, user-friendly, and maintainable in the long run.</description>
     </item>
     
+    <item>
+      <title>Building SQL Builder with Native Java: Simplifying JDBC Code</title>
+      <link>/posts/sql-builder-java/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sql-builder-java/</guid>
+      <description>In our previous blog on API design, we explored the art of creating APIs that are simple, elegant, and optimized. Now, let’s apply those principles to building SQL Builders using plain JDBC in native Java, providing a streamlined approach to working with databases while keeping the code concise and efficient.
+SQL Builders simplify database interactions by abstracting away raw SQL queries and connection management, allowing developers to focus on business logic.</description>
+    </item>
+    
   </channel>
 </rss>

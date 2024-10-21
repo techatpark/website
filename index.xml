@@ -160,6 +160,16 @@ Enforce consistent coding standards, making it easier for new contributors to un
     </item>
     
     <item>
+      <title>Building SQL Builder with Native Java: Simplifying JDBC Code</title>
+      <link>/posts/sql-builder-java/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sql-builder-java/</guid>
+      <description>In our previous blog on API design, we explored the art of creating APIs that are simple, elegant, and optimized. Now, let’s apply those principles to building SQL Builders using plain JDBC in native Java, providing a streamlined approach to working with databases while keeping the code concise and efficient.
+SQL Builders simplify database interactions by abstracting away raw SQL queries and connection management, allowing developers to focus on business logic.</description>
+    </item>
+    
+    <item>
       <title>Post No. 1</title>
       <link>/our-achievements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
