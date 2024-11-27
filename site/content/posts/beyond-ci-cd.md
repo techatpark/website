@@ -43,7 +43,11 @@ mvn versions:update-parent versions:update-properties
 mvn clean package
 ```
 
-3. **Exclude exceptions**: Allow specific dependencies to be excluded from upgrades when necessary, we can configure exclusions. This flexibility ensures critical or incompatible updates can be managed without stopping the entire upgrade process.
+3. **Exclude exceptions**: Allow specific dependencies to be excluded from upgrades when necessary, we can configure exclusions. This flexibility ensures critical or incompatible updates can be managed without stopping the entire upgrade process. We need dependencies to be excluded at `.mvn/jvm.config`
+
+```shell
+-Dexcludes=org.springframework.*
+```
 
 ## FAQ
 
