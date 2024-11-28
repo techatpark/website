@@ -142,7 +142,7 @@
 </span></span></code></pre></div><ol start="3">
 <li><strong>Exclude exceptions</strong>: Allow specific dependencies to be excluded from upgrades when necessary, we can configure exclusions. This flexibility ensures critical or incompatible updates can be managed without stopping the entire upgrade process. We need dependencies to be excluded at <code>.mvn/jvm.config</code></li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>-Dexcludes<span style="color:#f92672">=</span>org.springframework.*
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>-Dexcludes<span style="color:#f92672">=</span>org.springframework:*
 </span></span></code></pre></div><h2 id="faq">FAQ</h2>
 <p>By taking these steps, we ensure our codebase stays current and secure, preventing technical debt from becoming a barrier to progress. However, this approach is not without its challenges and resistance.</p>
 <ol start="0">
